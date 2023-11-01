@@ -1,10 +1,11 @@
 @use '../abstracts' as *;
 
 header {
-  background-color: lightpink;
+  background-color: rgb(237, 237, 237);
 }
 
 nav {
+
   a {
     color: #5c5c5c;
     text-decoration: none;
@@ -13,5 +14,9 @@ nav {
     &:hover {
       color: $color-secondary;
     }
+  }
+
+  li.selected a {
+    color: deepskyblue;
   }
 }
