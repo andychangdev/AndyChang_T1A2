@@ -1,0 +1,17 @@
+@use '../abstracts' as *;
+
+header {
+  background-color: lightpink;
+}
+
+nav {
+  a {
+    color: #5c5c5c;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+}
