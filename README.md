@@ -22,10 +22,10 @@
 <p align="center">
   <a href="#-purpose">Purpose</a> •
   <a href="#%EF%B8%8F-functionality">Functionality</a> •
-  <a href="#sitemap">Sitemap</a> •
-  <a href="#screenshots">Screenshots</a> •
-  <a href="#target-audience">Target Audience</a> •
-  <a href="#techstack">Techstack</a>
+  <a href="#%EF%B8%8F-sitemap">Sitemap</a> •
+  <a href="#-screenshots">Screenshots</a> •
+  <a href="#-target-audience">Target Audience</a> •
+  <a href="#-techstack">Techstack</a>
 </p>
 
 ![screenshot](./images/screencapture.gif)
