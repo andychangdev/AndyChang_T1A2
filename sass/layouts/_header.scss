@@ -1,11 +1,12 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
 header {
   background-color: rgb(237, 237, 237);
+  font-family: "Karla";
+  font-weight: 700;
 }
 
 nav {
-
   a {
     color: #5c5c5c;
     text-decoration: none;
