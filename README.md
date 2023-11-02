@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="./images/readme/readme-banner.png" alt="Readme Banner"></img>
+  <img src="./images/readme-banner.png" alt="Readme Banner"></img>
   <br>
   Andy Chang
   <br>
@@ -29,7 +29,7 @@
   <a href="#techstack">Techstack</a>
 </p>
 
-![screenshot](./images/readme/screencapture.gif)
+![screenshot](./images/screencapture.gif)
 
 ## 💡 Purpose
 
