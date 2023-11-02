@@ -20,8 +20,8 @@
 <h2 align="center">Documentation for T1A2 - Portfolio</h4>
 
 <p align="center">
-  <a href="#purpose">Purpose</a> •
-  <a href="#functionality">Functionality</a> •
+  <a href="#-purpose">Purpose</a> •
+  <a href="#%EF%B8%8F-functionality">Functionality</a> •
   <a href="#sitemap">Sitemap</a> •
   <a href="#screenshots">Screenshots</a> •
   <a href="#target-audience">Target Audience</a> •
