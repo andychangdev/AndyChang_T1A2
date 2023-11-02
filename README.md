@@ -1,4 +1,4 @@
-<div style="text-align: center;">
+<div align="center">
   <img src="./images/readme-banner.png" alt="Readme Banner"></img>
 </div>
 <h1 align="center">
