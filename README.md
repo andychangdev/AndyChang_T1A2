@@ -1,6 +1,7 @@
-![banner](./images/readme-banner.png)
-
-<h1 align="center"> 
+<div style="text-align: center;">
+  <img src="./images/readme-banner.png" alt="Readme Banner"></img>
+</div>
+<h1 align="center">
   Andy Chang
 </h1>
 
