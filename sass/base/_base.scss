@@ -1,0 +1,12 @@
+@use "../abstracts" as *;
+
+body {
+    font-family: "Karla";
+    color: $clr-primary;
+  }
+
+h2,
+h3,
+p {
+  margin: 0.5rem 0em;
+}

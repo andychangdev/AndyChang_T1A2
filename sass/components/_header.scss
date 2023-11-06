@@ -1,0 +1,95 @@
+@use "../abstracts" as *;
+
+
+nav {
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 2.5rem 0 0 2.5rem;
+  }
+  
+  a {
+    color: #5c5c5c;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $clr-secondary;
+    }
+  }
+
+  li {
+    margin: 0 0.7rem;
+  }
+
+  li.selected a {
+    color: deepskyblue;
+  }
+}
+
+.hero {
+  margin: 10rem auto;
+  width: 90%;
+  max-width: 65rem;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.wrapper .static-txt{
+   font-size: 60px;
+   font-weight: 400;
+}
+
+.wrapper .dynamic-txt {
+  margin-left: 15px;
+  line-height: 90px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.dynamic-txt li {
+  list-style: none;
+  color: $clr-secondary;
+  font-size: 60px;
+  font-weight: 500;
+  top: 0;
+  position: relative;
+  animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+
+.dynamic-txt li {
+  position: relative;
+}
+
+.dynamic-txt li::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-left: 2px solid $clr-secondary;
+  animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px)
+  }
+  100% {
+    left: 0;
+  }
+}
+
+
+
+

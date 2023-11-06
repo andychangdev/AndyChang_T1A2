@@ -1,0 +1,45 @@
+@use "../abstracts" as *;
+
+.hero {
+  & h1 {
+    font-family: $ff-secondary;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  & h2 {
+    font-family: $ff-secondary;
+    font-size: 3.75rem;
+    font-weight: 400;
+  }
+}
+
+.wrapper {
+  font-family: $ff-secondary;
+}
+
+h2 {
+  font-family: $ff-primary;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: $ff-primary;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+p {
+  font-family: $ff-primary;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+nav {
+  font-family: $ff-primary;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+}
+
