@@ -87,8 +87,11 @@ svg {
 }
 .hero__container h1 {
   font-family: "Lora", serif;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 500;
+}
+.hero__container .hero__wrapper {
+  font-family: "Lora", serif;
 }
 
 h2 {
@@ -168,19 +171,19 @@ nav {
   display: flex;
 }
 .hero__wrapper .hero__text--static {
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 400;
 }
 .hero__wrapper .hero__text--dynamic {
   margin-left: 10px;
-  line-height: 67.5px;
-  height: 67.5px;
+  line-height: 75px;
+  height: 75px;
   overflow: hidden;
 }
 .hero__wrapper .hero__text--dynamic li {
   list-style: none;
   color: deepskyblue;
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 500;
   top: 0;
   position: relative;
@@ -189,7 +192,7 @@ nav {
 
 @keyframes slide {
   100% {
-    top: -270px;
+    top: -300px;
   }
 }
 .hero__text--dynamic li {

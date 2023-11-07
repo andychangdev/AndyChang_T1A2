@@ -10,21 +10,21 @@
   display: flex;
 
   .hero__text--static {
-    font-size: 45px;
+    font-size: 50px;
     font-weight: 400;
   }
 
   .hero__text--dynamic {
     margin-left: 10px;
-    line-height: 67.5px;
-    height: 67.5px;
+    line-height: 75px;
+    height: 75px;
     overflow: hidden;
   }
 
   .hero__text--dynamic li {
     list-style: none;
     color: $clr-secondary;
-    font-size: 45px;
+    font-size: 50px;
     font-weight: 500;
     top: 0;
     position: relative;
@@ -34,7 +34,7 @@
 
 @keyframes slide {
   100% {
-    top: -270px;
+    top: -300px;
   }
 }
 
