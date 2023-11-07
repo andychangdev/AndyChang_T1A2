@@ -1,21 +1,15 @@
 @use "../abstracts" as *;
 
-.hero {
+.hero__container {
   & h1 {
     font-family: $ff-secondary;
     font-size: 1.8rem;
     font-weight: 500;
   }
 
-  & h2 {
+  .hero__wrapper {
     font-family: $ff-secondary;
-    font-size: 3.75rem;
-    font-weight: 400;
   }
-}
-
-.wrapper {
-  font-family: $ff-secondary;
 }
 
 h2 {

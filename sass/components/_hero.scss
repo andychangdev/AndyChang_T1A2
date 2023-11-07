@@ -1,0 +1,114 @@
+@use "../abstracts" as *;
+
+.hero__container {
+  margin: 10rem auto;
+  width: 90%;
+  max-width: 65rem;
+}
+
+.hero__wrapper {
+  display: flex;
+
+  .hero__text--static {
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  .hero__text--dynamic {
+    margin-left: 10px;
+    line-height: 60px;
+    height: 60px;
+    overflow: hidden;
+  }
+
+  .hero__text--dynamic li {
+    list-style: none;
+    color: $clr-secondary;
+    font-size: 40px;
+    font-weight: 500;
+    top: 0;
+    position: relative;
+    animation: slide 12s steps(4) infinite;
+  }
+}
+
+@keyframes slide {
+  100% {
+    top: -240px;
+  }
+}
+
+.hero__text--dynamic li {
+  position: relative;
+}
+
+.hero__text--dynamic li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-left: 2px solid $clr-secondary;
+  animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@include media-query(medium) {
+  .hero__wrapper {
+    .hero__text--static {
+      font-size: 60px;
+    }
+
+    .hero__text--dynamic li {
+      font-size: 60px;
+    }
+
+    .hero__text--dynamic {
+      margin-left: 15px;
+      line-height: 90px;
+      height: 90px;
+    }
+  }
+
+  @keyframes slide {
+    100% {
+      top: -360px;
+    }
+  }
+}
+
+
+@include media-query(xlarge) {
+  .hero__wrapper {
+    .hero__text--static {
+      font-size: 60px;
+    }
+
+    .hero__text--dynamic li {
+      font-size: 60px;
+    }
+
+    .hero__text--dynamic {
+      margin-left: 15px;
+      line-height: 90px;
+      height: 90px;
+    }
+  }
+
+  @keyframes slide {
+    100% {
+      top: -360px;
+    }
+  }
+}
+

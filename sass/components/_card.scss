@@ -1,4 +1,6 @@
-.card-container {
+@use "../abstracts" as *;
+
+.card__container {
   display: grid;
   gap: 3rem;
   margin: 3rem auto;
@@ -9,22 +11,6 @@
 .card {
   display: grid;
   gap: 1rem;
-}
-
-@media (min-width: 55em) {
-  .card {
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-  }
-
-  .card__wrapper {
-    margin: auto 0;
-  }
-
-  .card__img--right {
-    grid-row-start: 1;
-    grid-column: 2/3;
-  }
 }
 
 .card__img--left img , .card__img--right img {
@@ -41,6 +27,22 @@
     margin: 0.5em 0.5em 0em 0em;
     background-color: #f3f3f3;
     border-radius: 5px;
+  }
+}
+
+@include media-query (large) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .card__wrapper {
+    margin: auto 0;
+  }
+
+  .card__img--right {
+    grid-row-start: 1;
+    grid-column: 2/3;
   }
 }
 

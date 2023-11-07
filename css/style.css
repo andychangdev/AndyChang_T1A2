@@ -85,18 +85,12 @@ svg {
     scroll-behavior: auto !important;
   }
 }
-.hero h1 {
+.hero__container h1 {
   font-family: "Lora", serif;
   font-size: 1.8rem;
   font-weight: 500;
 }
-.hero h2 {
-  font-family: "Lora", serif;
-  font-size: 3.75rem;
-  font-weight: 400;
-}
-
-.wrapper {
+.hero__container .hero__wrapper {
   font-family: "Lora", serif;
 }
 
@@ -125,7 +119,7 @@ nav {
   letter-spacing: 0.15rem;
 }
 
-.card-container {
+.card__container {
   display: grid;
   gap: 3rem;
   margin: 3rem auto;
@@ -138,19 +132,6 @@ nav {
   gap: 1rem;
 }
 
-@media (min-width: 55em) {
-  .card {
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-  }
-  .card__wrapper {
-    margin: auto 0;
-  }
-  .card__img--right {
-    grid-row-start: 1;
-    grid-column: 2/3;
-  }
-}
 .card__img--left img, .card__img--right img {
   max-width: 100%;
   border-radius: 10px;
@@ -167,6 +148,112 @@ nav {
   border-radius: 5px;
 }
 
+@media only screen and (min-width: 992px) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+  .card__wrapper {
+    margin: auto 0;
+  }
+  .card__img--right {
+    grid-row-start: 1;
+    grid-column: 2/3;
+  }
+}
+.hero__container {
+  margin: 10rem auto;
+  width: 90%;
+  max-width: 65rem;
+}
+
+.hero__wrapper {
+  display: flex;
+}
+.hero__wrapper .hero__text--static {
+  font-size: 40px;
+  font-weight: 400;
+}
+.hero__wrapper .hero__text--dynamic {
+  margin-left: 10px;
+  line-height: 60px;
+  height: 60px;
+  overflow: hidden;
+}
+.hero__wrapper .hero__text--dynamic li {
+  list-style: none;
+  color: deepskyblue;
+  font-size: 40px;
+  font-weight: 500;
+  top: 0;
+  position: relative;
+  animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -240px;
+  }
+}
+.hero__text--dynamic li {
+  position: relative;
+}
+
+.hero__text--dynamic li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-left: 2px solid deepskyblue;
+  animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+  40%, 60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero__wrapper .hero__text--static {
+    font-size: 60px;
+  }
+  .hero__wrapper .hero__text--dynamic li {
+    font-size: 60px;
+  }
+  .hero__wrapper .hero__text--dynamic {
+    margin-left: 15px;
+    line-height: 90px;
+    height: 90px;
+  }
+  @keyframes slide {
+    100% {
+      top: -360px;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero__wrapper .hero__text--static {
+    font-size: 60px;
+  }
+  .hero__wrapper .hero__text--dynamic li {
+    font-size: 60px;
+  }
+  .hero__wrapper .hero__text--dynamic {
+    margin-left: 15px;
+    line-height: 90px;
+    height: 90px;
+  }
+  @keyframes slide {
+    100% {
+      top: -360px;
+    }
+  }
+}
 nav ul {
   display: flex;
   list-style: none;
@@ -187,66 +274,6 @@ nav li.selected a {
   color: deepskyblue;
 }
 
-.hero {
-  margin: 10rem auto;
-  width: 90%;
-  max-width: 65rem;
-}
-
-.wrapper {
-  display: flex;
-}
-
-.wrapper .static-txt {
-  font-size: 60px;
-  font-weight: 400;
-}
-
-.wrapper .dynamic-txt {
-  margin-left: 15px;
-  line-height: 90px;
-  height: 90px;
-  overflow: hidden;
-}
-
-.dynamic-txt li {
-  list-style: none;
-  color: deepskyblue;
-  font-size: 60px;
-  font-weight: 500;
-  top: 0;
-  position: relative;
-  animation: slide 12s steps(4) infinite;
-}
-
-@keyframes slide {
-  100% {
-    top: -360px;
-  }
-}
-.dynamic-txt li {
-  position: relative;
-}
-
-.dynamic-txt li::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #fff;
-  border-left: 2px solid deepskyblue;
-  animation: typing 3s steps(10) infinite;
-}
-
-@keyframes typing {
-  40%, 60% {
-    left: calc(100% + 30px);
-  }
-  100% {
-    left: 0;
-  }
-}
 footer {
   background-color: lightblue;
 }/*# sourceMappingURL=style.css.map */
