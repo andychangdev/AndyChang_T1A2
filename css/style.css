@@ -168,19 +168,19 @@ nav {
   display: flex;
 }
 .hero__wrapper .hero__text--static {
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 400;
 }
 .hero__wrapper .hero__text--dynamic {
   margin-left: 10px;
-  line-height: 60px;
-  height: 60px;
+  line-height: 67.5px;
+  height: 67.5px;
   overflow: hidden;
 }
 .hero__wrapper .hero__text--dynamic li {
   list-style: none;
   color: deepskyblue;
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 500;
   top: 0;
   position: relative;
@@ -189,7 +189,7 @@ nav {
 
 @keyframes slide {
   100% {
-    top: -240px;
+    top: -270px;
   }
 }
 .hero__text--dynamic li {
@@ -216,9 +216,6 @@ nav {
   }
 }
 @media only screen and (min-width: 768px) {
-  .hero__container {
-    margin: 7rem auto;
-  }
   .hero__container h1 {
     font-size: 1.5rem;
   }
@@ -240,9 +237,6 @@ nav {
   }
 }
 @media only screen and (min-width: 1200px) {
-  .hero__container {
-    margin: 10rem auto;
-  }
   .hero__container h1 {
     font-size: 1.8rem;
   }

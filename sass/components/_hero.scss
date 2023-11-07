@@ -10,21 +10,21 @@
   display: flex;
 
   .hero__text--static {
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 400;
   }
 
   .hero__text--dynamic {
     margin-left: 10px;
-    line-height: 60px;
-    height: 60px;
+    line-height: 67.5px;
+    height: 67.5px;
     overflow: hidden;
   }
 
   .hero__text--dynamic li {
     list-style: none;
     color: $clr-secondary;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 500;
     top: 0;
     position: relative;
@@ -34,7 +34,7 @@
 
 @keyframes slide {
   100% {
-    top: -240px;
+    top: -270px;
   }
 }
 
@@ -65,8 +65,6 @@
 
 @include media-query(medium) {
   .hero__container {
-    margin: 7rem auto;
-
     & h1 {
       font-size: 1.5rem;
     }
@@ -97,8 +95,6 @@
 
 @include media-query(xlarge) {
   .hero__container {
-    margin: 10rem auto;
-
     & h1 {
       font-size: 1.8rem;
     }
