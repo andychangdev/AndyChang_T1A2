@@ -260,26 +260,39 @@ nav {
     }
   }
 }
-nav ul {
+.nav__container ul {
   display: flex;
   list-style: none;
-  margin: 2.5rem 0 0 2.5rem;
+  justify-content: center;
+  margin-top: 2.5rem;
 }
-nav a {
+.nav__container a {
   color: #5c5c5c;
   text-decoration: none;
   text-transform: uppercase;
 }
-nav a:hover {
+.nav__container a:hover {
   color: deepskyblue;
 }
-nav li {
+.nav__container li {
   margin: 0 0.7rem;
 }
-nav li.selected a {
+.nav__container li.selected a {
   color: deepskyblue;
 }
 
+@media only screen and (min-width: 1200px) {
+  .nav__container ul {
+    justify-content: left;
+    margin-left: 2.5rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .nav__container ul {
+    justify-content: left;
+    margin-left: 2.5rem;
+  }
+}
 footer {
   background-color: lightblue;
 }/*# sourceMappingURL=style.css.map */
