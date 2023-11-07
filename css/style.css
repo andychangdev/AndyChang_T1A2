@@ -192,7 +192,7 @@ nav {
 
 @keyframes slide {
   100% {
-    top: -240px;
+    top: -270px;
   }
 }
 .hero__text--dynamic li {
