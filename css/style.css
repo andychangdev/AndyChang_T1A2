@@ -21,6 +21,10 @@ p {
   font-family: "Karla";
   src: url("../../font/Karla-VariableFont_wght.ttf") format("truetype");
 }
+@font-face {
+  font-family: "SourceCodePro";
+  src: url("../../font/SourceCodePro-VariableFont_wght.ttf") format("truetype");
+}
 /* Box sizing rules */
 *,
 *::before,
@@ -138,14 +142,16 @@ nav {
 }
 
 .card__list {
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 .card__list li {
+  font-family: "SourceCodePro";
   display: inline-block;
-  padding: 0.3rem 0.5em;
-  margin: 0.5em 0.5em 0em 0em;
-  background-color: #f3f3f3;
-  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 0.4rem;
+  padding: 2px 4px;
+  background: #f9f9fb;
+  border-radius: 3px;
 }
 
 @media only screen and (min-width: 1200px) {
