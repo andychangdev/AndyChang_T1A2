@@ -47,34 +47,48 @@
 
 .card__icon {
   margin-bottom: 1rem;
+  display: flex;
 
   ul {
     display: flex;
+  }
+
+  p {
     font-weight: bold;
     font-size: 1.2rem;
+    margin: 0 1rem 0 0;
   }
   
   li {
     display: inline-block;
     margin-right: 1rem;
     text-align: center;
+    padding: 0.8rem;
   }
 
-  li.javascript {
-    background: url('https://api.iconify.design/logos/javascript.svg') no-repeat center center / contain;
-    padding: 0.8rem;
-  }
   li.html {
     background: url('https://api.iconify.design/vscode-icons/file-type-html.svg') no-repeat center center / contain;
-    padding: 0.8rem;
   }
   li.css {
     background: url('https://api.iconify.design/vscode-icons/file-type-css.svg') no-repeat center center / contain;
-    padding: 0.8rem;
   }
   li.sass {
     background: url('https://api.iconify.design/skill-icons/sass.svg') no-repeat center center / contain;
-    padding: 0.8rem;
+  }
+  li.javascript {
+    background: url('https://api.iconify.design/logos/javascript.svg') no-repeat center center / contain;
+  }
+  li.python {
+    background: url('https://api.iconify.design/logos/python.svg') no-repeat center center / contain;
+  }
+  li.reactjs {
+    background: url('https://api.iconify.design/vscode-icons/file-type-reactjs.svg') no-repeat center center / contain;
+  }
+  li.nodejs {
+    background: url('https://api.iconify.design/devicon/nodejs.svg') no-repeat center center / contain;
+  }
+  li.mongodb {
+    background: url('https://api.iconify.design/devicon/mongodb-wordmark.svg') no-repeat center center / contain;
   }
 }
 
