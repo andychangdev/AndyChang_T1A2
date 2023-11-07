@@ -87,11 +87,8 @@ svg {
 }
 .hero__container h1 {
   font-family: "Lora", serif;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 500;
-}
-.hero__container .hero__wrapper {
-  font-family: "Lora", serif;
 }
 
 h2 {
@@ -148,7 +145,7 @@ nav {
   border-radius: 5px;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .card {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
@@ -162,7 +159,7 @@ nav {
   }
 }
 .hero__container {
-  margin: 10rem auto;
+  margin: 4rem auto;
   width: 90%;
   max-width: 65rem;
 }
@@ -219,6 +216,12 @@ nav {
   }
 }
 @media only screen and (min-width: 768px) {
+  .hero__container {
+    margin: 7rem auto;
+  }
+  .hero__container h1 {
+    font-size: 1.5rem;
+  }
   .hero__wrapper .hero__text--static {
     font-size: 60px;
   }
@@ -237,20 +240,26 @@ nav {
   }
 }
 @media only screen and (min-width: 1200px) {
+  .hero__container {
+    margin: 10rem auto;
+  }
+  .hero__container h1 {
+    font-size: 1.8rem;
+  }
   .hero__wrapper .hero__text--static {
-    font-size: 60px;
+    font-size: 80px;
   }
   .hero__wrapper .hero__text--dynamic li {
-    font-size: 60px;
+    font-size: 80px;
   }
   .hero__wrapper .hero__text--dynamic {
-    margin-left: 15px;
-    line-height: 90px;
-    height: 90px;
+    margin-left: 20px;
+    line-height: 120px;
+    height: 120px;
   }
   @keyframes slide {
     100% {
-      top: -360px;
+      top: -480px;
     }
   }
 }

@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
 .hero__container {
-  margin: 10rem auto;
+  margin: 4rem auto;
   width: 90%;
   max-width: 65rem;
 }
@@ -64,6 +64,14 @@
 }
 
 @include media-query(medium) {
+  .hero__container {
+    margin: 7rem auto;
+    
+    & h1 {
+      font-size: 1.5rem;
+    }
+  }
+
   .hero__wrapper {
     .hero__text--static {
       font-size: 60px;
@@ -86,29 +94,34 @@
     }
   }
 }
-
 
 @include media-query(xlarge) {
+  .hero__container {
+    margin: 10rem auto;
+
+    & h1 {
+      font-size: 1.8rem;
+    }
+  }
   .hero__wrapper {
     .hero__text--static {
-      font-size: 60px;
+      font-size: 80px;
     }
 
     .hero__text--dynamic li {
-      font-size: 60px;
+      font-size: 80px;
     }
 
     .hero__text--dynamic {
-      margin-left: 15px;
-      line-height: 90px;
-      height: 90px;
+      margin-left: 20px;
+      line-height: 120px;
+      height: 120px;
     }
   }
 
   @keyframes slide {
     100% {
-      top: -360px;
+      top: -480px;
     }
   }
 }
-
