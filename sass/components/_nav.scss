@@ -6,7 +6,7 @@
     display: flex;
     list-style: none;
     justify-content: center;
-    margin-top: 2.5rem;
+    padding: 2.5rem 0rem;
   }
 
   a {
@@ -25,13 +25,6 @@
 
   li.selected a {
     color: deepskyblue;
-  }
-}
-
-@include media-query (xlarge) {
-  .nav__container ul {
-    justify-content: left;
-    margin-left: 2.5rem;
   }
 }
 

@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
 .hero__container {
-  margin: 10rem auto;
+  margin: 8rem auto 10rem auto;
   width: 90%;
   max-width: 65rem;
 }
@@ -93,7 +93,7 @@
   }
 }
 
-@include media-query(xlarge) {
+@include media-query(large) {
   .hero__container {
     & h1 {
       font-size: 1.8rem;

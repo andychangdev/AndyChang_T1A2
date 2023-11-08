@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="nav__container">
         <ul>
           <li><a href="../index.html">Work</a></li>
           <li><a href="./blog.html">Blog</a></li>
@@ -18,7 +18,18 @@
       </nav>
     </header>
     <main>
-      
+      <div class="main__container">
+        <h1>Wanna say hey?</h1>
+        <p>Pop me an email at andychang.dev@gmail.com or through this form.</p>
+        <p>I'd love to hear from you!</p>
+      </div>
+
+      <form action="https://formspree.io/f/xleyvaad" method="POST">
+        <label>Your email:<input type="email" name="email"></label>
+        <label>Your message:<textarea name="message"></textarea></label>
+        <!-- your other form fields go here -->
+        <button type="submit">Submit</button>
+      </form>
     </main>
     <footer>
       <h6>&#169; ANDY CHANG 2023</h6>

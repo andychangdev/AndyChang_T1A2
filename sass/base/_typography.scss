@@ -12,6 +12,15 @@
 
 }
 
+body {
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: $ff-secondary;
+  font-size: 3rem;
+}
+
 h2 {
   font-family: $ff-primary;
   font-size: 1.8rem;
@@ -35,5 +44,18 @@ nav {
   font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.15rem;
+}
+
+@include media-query (large) {
+  body {
+    font-size: 1.125rem;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
 }
 

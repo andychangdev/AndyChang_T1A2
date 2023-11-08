@@ -98,6 +98,15 @@ svg {
   font-family: "Lora", serif;
 }
 
+body {
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: "Lora", serif;
+  font-size: 3rem;
+}
+
 h2 {
   font-family: "Karla", sans-serif;
   font-size: 1.8rem;
@@ -123,12 +132,26 @@ nav {
   letter-spacing: 0.15rem;
 }
 
-.card__container {
-  display: grid;
-  gap: 3rem;
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: 1.125rem;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+  p {
+    font-size: 1.125rem;
+  }
+}
+main {
   margin: 3rem auto;
   width: 90%;
   max-width: 65rem;
+}
+
+.card__container {
+  display: grid;
+  gap: 3rem;
 }
 
 .card {
@@ -215,7 +238,7 @@ nav {
   }
 }
 .hero__container {
-  margin: 10rem auto;
+  margin: 8rem auto 10rem auto;
   width: 90%;
   max-width: 65rem;
 }
@@ -292,7 +315,7 @@ nav {
     }
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
   .hero__container h1 {
     font-size: 1.8rem;
   }
@@ -317,7 +340,7 @@ nav {
   display: flex;
   list-style: none;
   justify-content: center;
-  margin-top: 2.5rem;
+  padding: 2.5rem 0rem;
 }
 .nav__container a {
   color: #5c5c5c;
@@ -334,12 +357,6 @@ nav {
   color: deepskyblue;
 }
 
-@media only screen and (min-width: 1200px) {
-  .nav__container ul {
-    justify-content: left;
-    margin-left: 2.5rem;
-  }
-}
 @media only screen and (min-width: 1200px) {
   .nav__container ul {
     justify-content: left;
