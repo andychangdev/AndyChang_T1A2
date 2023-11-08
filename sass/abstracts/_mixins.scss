@@ -1,0 +1,22 @@
+@use "./breakpoints" as *;
+
+@mixin media-query($key) {
+  $size: map-get($breakpoints, $key);
+
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin buttons {
+  font-family: "SourceCodePro";
+  background: #f9f9fb;
+  border: 1px solid #ccc;
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

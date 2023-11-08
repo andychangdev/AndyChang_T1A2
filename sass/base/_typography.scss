@@ -2,45 +2,52 @@
 
 .hero__container {
   & h1 {
-    font-family: $ff-secondary;
+    font-family: $ff-heading;
     font-size: 1.3rem;
     font-weight: 500;
   }
   .hero__wrapper {
-    font-family: $ff-secondary;
+    font-family: $ff-heading;
   }
 
 }
 
-body {
+html {
+  font-family: $ff-body;
   font-size: 1rem;
 }
 
 h1 {
-  font-family: $ff-secondary;
+  font-family: $ff-heading;
   font-size: 3rem;
 }
 
 h2 {
-  font-family: $ff-primary;
+  font-family: $ff-body;
   font-size: 1.8rem;
   font-weight: 700;
 }
 
 h3 {
-  font-family: $ff-primary;
+  font-family: $ff-body;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
 p {
-  font-family: $ff-primary;
+  font-family: $ff-body;
   font-size: 1rem;
   font-weight: 400;
 }
 
+a {
+  font-family: $ff-body;
+  color: $clr-primary;
+  text-decoration: none;
+}
+
 nav {
-  font-family: $ff-primary;
+  font-family: $ff-body;
   font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.15rem;

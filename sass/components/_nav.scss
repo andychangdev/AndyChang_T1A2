@@ -9,12 +9,7 @@
     padding: 2.5rem 0rem;
   }
 
-  a {
-    color: #5c5c5c;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    &:hover {
+  a:hover {
       color: $clr-secondary;
     }
   }
@@ -26,7 +21,6 @@
   li.selected a {
     color: deepskyblue;
   }
-}
 
 @include media-query (xlarge) {
   .nav__container ul {

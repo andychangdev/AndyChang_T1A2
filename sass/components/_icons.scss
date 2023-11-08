@@ -1,0 +1,45 @@
+@use "../abstracts" as *;
+
+.icons__list {
+    margin-bottom: 1rem;
+    display: flex;
+  
+    p {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin: 0 1rem 0 0;
+    }
+    
+    span {
+      display: inline-block;
+      margin-right: 1rem;
+      text-align: center;
+      padding: 0.8rem;
+  
+    }
+}
+
+.icon__html {
+  background: url('https://api.iconify.design/vscode-icons/file-type-html.svg') no-repeat center center / contain;
+}
+.icon__css {
+  background: url('https://api.iconify.design/vscode-icons/file-type-css.svg') no-repeat center center / contain;
+}
+.icon__sass {
+  background: url('https://api.iconify.design/skill-icons/sass.svg') no-repeat center center / contain;
+}
+.icon__javascript {
+  background: url('https://api.iconify.design/logos/javascript.svg') no-repeat center center / contain;
+}
+.icon__python {
+  background: url('https://api.iconify.design/logos/python.svg') no-repeat center center / contain;
+}
+.icon__reactjs {
+  background: url('https://api.iconify.design/vscode-icons/file-type-reactjs.svg') no-repeat center center / contain;
+}
+.icon__nodejs {
+  background: url('https://api.iconify.design/devicon/nodejs.svg') no-repeat center center / contain;
+}
+.icon__mongodb {
+  background: url('https://api.iconify.design/devicon/mongodb-wordmark.svg') no-repeat center center / contain;
+}

@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+
+button {
+  @include buttons;
+}
+
+.btn {
+  @include buttons;
+  display: inline-block;
+  margin-right: 0.6rem;
+}
+
+.btn.live {
+  color: #fff;
+  background: #579adc;
+  border: 1px solid #579adc;
+}

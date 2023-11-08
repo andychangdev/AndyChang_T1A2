@@ -2,7 +2,7 @@
 /* Font Family */
 /* Font Weight */
 /* Font Size */
-body {
+html {
   font-family: "Karla";
   color: #5c5c5c;
 }
@@ -10,7 +10,7 @@ body {
 h2,
 h3,
 p {
-  margin: 0.5rem 0em;
+  margin: 1rem 0em;
 }
 
 @font-face {
@@ -90,43 +90,50 @@ svg {
   }
 }
 .hero__container h1 {
-  font-family: "Lora", serif;
+  font-family: "Lora", Georgia, serif;
   font-size: 1.3rem;
   font-weight: 500;
 }
 .hero__container .hero__wrapper {
-  font-family: "Lora", serif;
+  font-family: "Lora", Georgia, serif;
 }
 
-body {
+html {
+  font-family: "Karla", Verdana, sans-serif;
   font-size: 1rem;
 }
 
 h1 {
-  font-family: "Lora", serif;
+  font-family: "Lora", Georgia, serif;
   font-size: 3rem;
 }
 
 h2 {
-  font-family: "Karla", sans-serif;
+  font-family: "Karla", Verdana, sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
 }
 
 h3 {
-  font-family: "Karla", sans-serif;
+  font-family: "Karla", Verdana, sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
 p {
-  font-family: "Karla", sans-serif;
+  font-family: "Karla", Verdana, sans-serif;
   font-size: 1rem;
   font-weight: 400;
 }
 
+a {
+  font-family: "Karla", Verdana, sans-serif;
+  color: #5c5c5c;
+  text-decoration: none;
+}
+
 nav {
-  font-family: "Karla", sans-serif;
+  font-family: "Karla", Verdana, sans-serif;
   font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.15rem;
@@ -159,7 +166,7 @@ main {
   gap: 1rem;
 }
 
-.card__img--left img, .card__img--right img {
+.card__img img {
   max-width: 100%;
   border-radius: 10px;
 }
@@ -181,49 +188,6 @@ main {
   color: #5c5c5c;
 }
 
-.card__icon {
-  margin-bottom: 1rem;
-  display: flex;
-}
-.card__icon ul {
-  display: flex;
-}
-.card__icon p {
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin: 0 1rem 0 0;
-}
-.card__icon li {
-  display: inline-block;
-  margin-right: 1rem;
-  text-align: center;
-  padding: 0.8rem;
-}
-.card__icon li.html {
-  background: url("https://api.iconify.design/vscode-icons/file-type-html.svg") no-repeat center center/contain;
-}
-.card__icon li.css {
-  background: url("https://api.iconify.design/vscode-icons/file-type-css.svg") no-repeat center center/contain;
-}
-.card__icon li.sass {
-  background: url("https://api.iconify.design/skill-icons/sass.svg") no-repeat center center/contain;
-}
-.card__icon li.javascript {
-  background: url("https://api.iconify.design/logos/javascript.svg") no-repeat center center/contain;
-}
-.card__icon li.python {
-  background: url("https://api.iconify.design/logos/python.svg") no-repeat center center/contain;
-}
-.card__icon li.reactjs {
-  background: url("https://api.iconify.design/vscode-icons/file-type-reactjs.svg") no-repeat center center/contain;
-}
-.card__icon li.nodejs {
-  background: url("https://api.iconify.design/devicon/nodejs.svg") no-repeat center center/contain;
-}
-.card__icon li.mongodb {
-  background: url("https://api.iconify.design/devicon/mongodb-wordmark.svg") no-repeat center center/contain;
-}
-
 @media only screen and (min-width: 1200px) {
   .card {
     grid-template-columns: 1fr 1fr;
@@ -232,7 +196,7 @@ main {
   .card__wrapper {
     margin: auto 0;
   }
-  .card__img--right {
+  .card__img.img--right {
     grid-row-start: 1;
     grid-column: 2/3;
   }
@@ -342,18 +306,15 @@ main {
   justify-content: center;
   padding: 2.5rem 0rem;
 }
-.nav__container a {
-  color: #5c5c5c;
-  text-decoration: none;
-  text-transform: uppercase;
-}
 .nav__container a:hover {
   color: deepskyblue;
 }
-.nav__container li {
+
+li {
   margin: 0 0.7rem;
 }
-.nav__container li.selected a {
+
+li.selected a {
   color: deepskyblue;
 }
 
@@ -363,6 +324,86 @@ main {
     margin-left: 2.5rem;
   }
 }
+.icons__list {
+  margin-bottom: 1rem;
+  display: flex;
+}
+.icons__list p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0 1rem 0 0;
+}
+.icons__list span {
+  display: inline-block;
+  margin-right: 1rem;
+  text-align: center;
+  padding: 0.8rem;
+}
+
+.icon__html {
+  background: url("https://api.iconify.design/vscode-icons/file-type-html.svg") no-repeat center center/contain;
+}
+
+.icon__css {
+  background: url("https://api.iconify.design/vscode-icons/file-type-css.svg") no-repeat center center/contain;
+}
+
+.icon__sass {
+  background: url("https://api.iconify.design/skill-icons/sass.svg") no-repeat center center/contain;
+}
+
+.icon__javascript {
+  background: url("https://api.iconify.design/logos/javascript.svg") no-repeat center center/contain;
+}
+
+.icon__python {
+  background: url("https://api.iconify.design/logos/python.svg") no-repeat center center/contain;
+}
+
+.icon__reactjs {
+  background: url("https://api.iconify.design/vscode-icons/file-type-reactjs.svg") no-repeat center center/contain;
+}
+
+.icon__nodejs {
+  background: url("https://api.iconify.design/devicon/nodejs.svg") no-repeat center center/contain;
+}
+
+.icon__mongodb {
+  background: url("https://api.iconify.design/devicon/mongodb-wordmark.svg") no-repeat center center/contain;
+}
+
+button {
+  font-family: "SourceCodePro";
+  background: #f9f9fb;
+  border: 1px solid #ccc;
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: transform 0.3s ease-in-out;
+}
+button:hover {
+  transform: scale(1.1);
+}
+
+.btn {
+  font-family: "SourceCodePro";
+  background: #f9f9fb;
+  border: 1px solid #ccc;
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+  margin-right: 0.6rem;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn.live {
+  color: #fff;
+  background: #579adc;
+  border: 1px solid #579adc;
+}
+
 footer {
   background-color: lightblue;
 }/*# sourceMappingURL=style.css.map */

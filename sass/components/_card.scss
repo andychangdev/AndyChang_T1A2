@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
 main {
-  margin: 3rem auto;
+ margin: 3rem auto;
   width: 90%;
   max-width: 65rem;
 }
@@ -16,7 +16,7 @@ main {
   gap: 1rem;
 }
 
-.card__img--left img , .card__img--right img {
+.card__img img {
   max-width: 100%;
   border-radius: 10px;
 }
@@ -48,53 +48,6 @@ main {
   }
 }
 
-.card__icon {
-  margin-bottom: 1rem;
-  display: flex;
-
-  ul {
-    display: flex;
-  }
-
-  p {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin: 0 1rem 0 0;
-  }
-  
-  li {
-    display: inline-block;
-    margin-right: 1rem;
-    text-align: center;
-    padding: 0.8rem;
-  }
-
-  li.html {
-    background: url('https://api.iconify.design/vscode-icons/file-type-html.svg') no-repeat center center / contain;
-  }
-  li.css {
-    background: url('https://api.iconify.design/vscode-icons/file-type-css.svg') no-repeat center center / contain;
-  }
-  li.sass {
-    background: url('https://api.iconify.design/skill-icons/sass.svg') no-repeat center center / contain;
-  }
-  li.javascript {
-    background: url('https://api.iconify.design/logos/javascript.svg') no-repeat center center / contain;
-  }
-  li.python {
-    background: url('https://api.iconify.design/logos/python.svg') no-repeat center center / contain;
-  }
-  li.reactjs {
-    background: url('https://api.iconify.design/vscode-icons/file-type-reactjs.svg') no-repeat center center / contain;
-  }
-  li.nodejs {
-    background: url('https://api.iconify.design/devicon/nodejs.svg') no-repeat center center / contain;
-  }
-  li.mongodb {
-    background: url('https://api.iconify.design/devicon/mongodb-wordmark.svg') no-repeat center center / contain;
-  }
-}
-
 @include media-query (xlarge) {
   
   .card {
@@ -106,7 +59,7 @@ main {
     margin: auto 0;
   }
 
-  .card__img--right {
+  .card__img.img--right {
     grid-row-start: 1;
     grid-column: 2/3;
   }
