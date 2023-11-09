@@ -54,6 +54,10 @@ nav {
   text-transform: uppercase;
 }
 
+button {
+  
+}
+
 @include media-query (large) {
   body {
     font-size: 1.125rem;

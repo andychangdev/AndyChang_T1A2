@@ -1,6 +1,7 @@
 @use "../abstracts" as *;
 
 button {
+  color: $clr-primary;
   @include buttons;
 
   &:hover {

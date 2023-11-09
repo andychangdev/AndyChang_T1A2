@@ -369,6 +369,7 @@ li.selected a {
 }
 
 button {
+  color: #5c5c5c;
   font-family: "SourceCodePro";
   background: #f9f9fb;
   border: 1px solid #ccc;
