@@ -153,6 +153,7 @@ nav {
   font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.15rem;
+  text-transform: uppercase;
 }
 
 @media only screen and (min-width: 992px) {
@@ -310,7 +311,6 @@ nav {
 
 li {
   margin: 0 0.7rem;
-  text-transform: uppercase;
 }
 
 li.selected a {
