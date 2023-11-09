@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+.form__container {
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;
+  padding: 0.7rem 1.25rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+    border: 2px solid $clr-secondary;
+  }
+}
+
+@include media-query (large) {
+    .form__container {
+        width: 60%;
+    }
+}
+

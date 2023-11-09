@@ -2,6 +2,10 @@
 
 button {
   @include buttons;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .btn {

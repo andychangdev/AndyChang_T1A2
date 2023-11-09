@@ -1,5 +1,11 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
 footer {
-    background-color: lightblue;
+  background-color: lightblue;
+}
+
+.footer__container {
+  margin: 0rem auto;
+  width: 90%;
+  max-width: 90rem;
 }

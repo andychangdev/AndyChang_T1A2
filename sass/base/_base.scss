@@ -1,13 +1,28 @@
 @use "../abstracts" as *;
 
-html {
-    font-family: "Karla";
-    color: $clr-primary;
-    // background-color:rgb(241, 250, 255);
-  }
+html, body {
+  font-family: "Karla";
+  color: $clr-primary;
+  height: 100%;
+  margin: 0;
+}
 
-h2,
-h3,
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 65rem;
+  flex: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem; 
+}
+
 p {
-  margin: 1rem 0em;
+  margin: 1rem 0;
 }

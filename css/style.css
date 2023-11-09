@@ -2,15 +2,31 @@
 /* Font Family */
 /* Font Weight */
 /* Font Size */
-html {
+html, body {
   font-family: "Karla";
   color: #5c5c5c;
+  height: 100%;
+  margin: 0;
 }
 
-h2,
-h3,
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 65rem;
+  flex: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+}
+
 p {
-  margin: 1rem 0em;
+  margin: 1rem 0;
 }
 
 @font-face {
@@ -150,12 +166,6 @@ nav {
     font-size: 1.125rem;
   }
 }
-main {
-  margin: 3rem auto;
-  width: 90%;
-  max-width: 65rem;
-}
-
 .card__container {
   display: grid;
   gap: 3rem;
@@ -169,23 +179,6 @@ main {
 .card__img img {
   max-width: 100%;
   border-radius: 10px;
-}
-
-.card__list {
-  margin-top: 1rem;
-}
-.card__list li {
-  font-family: "SourceCodePro";
-  display: inline-block;
-  border: 1px solid #ccc;
-  margin-right: 0.4rem;
-  padding: 2px 4px;
-  background: #f9f9fb;
-  border-radius: 3px;
-}
-.card__list a {
-  text-decoration: none;
-  color: #5c5c5c;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -300,6 +293,11 @@ main {
     }
   }
 }
+.nav__container {
+  margin: 0rem auto;
+  width: 90%;
+  max-width: 90rem;
+}
 .nav__container ul {
   display: flex;
   list-style: none;
@@ -312,6 +310,7 @@ main {
 
 li {
   margin: 0 0.7rem;
+  text-transform: uppercase;
 }
 
 li.selected a {
@@ -321,11 +320,9 @@ li.selected a {
 @media only screen and (min-width: 1200px) {
   .nav__container ul {
     justify-content: left;
-    margin-left: 2.5rem;
   }
 }
 .icons__list {
-  margin-bottom: 1rem;
   display: flex;
 }
 .icons__list p {
@@ -383,6 +380,9 @@ button {
 button:hover {
   transform: scale(1.1);
 }
+button:hover {
+  cursor: pointer;
+}
 
 .btn {
   font-family: "SourceCodePro";
@@ -404,6 +404,35 @@ button:hover {
   border: 1px solid #579adc;
 }
 
+.form__container {
+  width: 100%;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.7rem 1.25rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input:focus, textarea:focus {
+  outline: none;
+  border: 2px solid deepskyblue;
+}
+
+@media only screen and (min-width: 992px) {
+  .form__container {
+    width: 60%;
+  }
+}
 footer {
   background-color: lightblue;
+}
+
+.footer__container {
+  margin: 0rem auto;
+  width: 90%;
+  max-width: 90rem;
 }/*# sourceMappingURL=style.css.map */
