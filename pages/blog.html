@@ -2,14 +2,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../css/style.css" />
     <title>Blog | Andy Chang</title>
   </head>
   <body>
     <header>
-      <nav class="nav__container">
-        <ul>
+      <!-- This is component no. 1 -->
+      <nav class="content-grid">
+        <ul class="breakout">
           <li><a href="../index.html">Work</a></li>
           <li class="selected"><a href="./blog.html">Blog</a></li>
           <li><a href="./about.html">About</a></li>
@@ -17,17 +18,15 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <div class="main__container">
+    <main class="content-grid">
+      <section>
         <h1>My blog</h1>
         <p>Pop me an email at andychang.dev@gmail.com or through this form.</p>
         <p>I'd love to hear from you!</p>
-      </div>
+      </section>
     </main>
-    <footer>
-      <div class="footer__container">
-        <p class="copyright">&#169; ANDY CHANG 2023</p>
-      </div>
+    <footer class="content-grid">
+      <p class="breakout copyright">&#169; ANDY CHANG 2023</p>
     </footer>
   </body>
 </html>

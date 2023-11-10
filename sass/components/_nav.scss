@@ -1,10 +1,6 @@
 @use "../abstracts" as *;
 
-.nav__container {
-  margin: 0rem auto;
-  width: 90%;
-  max-width: 90rem;
-
+nav {
   ul {
     display: flex;
     list-style: none;
@@ -13,21 +9,20 @@
   }
 
   a:hover {
-      color: $clr-secondary;
-    }
+    color: $clr-secondary;
   }
+}
 
-  li {
-    margin: 0 0.7rem;
-  }
+li {
+  margin: 0 0.7rem;
+}
 
-  li.selected a {
-    color: deepskyblue;
-  }
+li.selected a {
+  color: deepskyblue;
+}
 
-@include media-query (xlarge) {
-  .nav__container ul {
+@include media-query(xlarge) {
+  nav ul {
     justify-content: left;
-    // margin-left: 2.5rem;
   }
 }

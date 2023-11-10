@@ -1,13 +1,11 @@
 @use "../abstracts" as *;
 
-.hero__container {
-  & h1 {
-    font-family: $ff-heading;
+.hero {
+  font-family: $ff-heading;
+
+  h1 {
     font-size: 1.3rem;
     font-weight: 500;
-  }
-  .hero__wrapper {
-    font-family: $ff-heading;
   }
 
 }
@@ -54,11 +52,21 @@ nav {
   text-transform: uppercase;
 }
 
-button {
-  
+@include media-query(medium) {
+  .hero {
+    & h1 {
+      font-size: 1.5rem;
+    }
+  }
 }
 
 @include media-query (large) {
+  .hero {
+    & h1 {
+      font-size: 1.8rem;
+    }
+  }
+
   body {
     font-size: 1.125rem;
   }

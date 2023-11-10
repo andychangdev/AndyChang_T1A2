@@ -1,11 +1,13 @@
 @use "../abstracts" as *;
 
-.form__container {
-    width: 100%;
-}
+// .form__container {
+//     display: grid;
+//     justify-content: center;
+
+// }
 
 input, textarea {
-    width: 100%;
+  width: 100%;
   padding: 0.7rem 1.25rem;
   margin-bottom: 1rem;
   display: inline-block;
@@ -19,9 +21,9 @@ input, textarea {
   }
 }
 
-@include media-query (large) {
-    .form__container {
-        width: 60%;
-    }
-}
+// @include media-query (large) {
+//     .form__container {
+//         // width: 60%;
+//     }
+// }
 

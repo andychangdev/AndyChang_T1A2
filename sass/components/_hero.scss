@@ -1,12 +1,10 @@
 @use "../abstracts" as *;
 
-.hero__container {
-  margin: 8rem auto 10rem auto;
-  width: 90%;
-  max-width: 65rem;
+.hero {
+  margin: 8rem 0 10rem 0;
 }
 
-.hero__wrapper {
+.hero__typewriter {
   display: flex;
 
   .hero__text--static {
@@ -63,13 +61,8 @@
 }
 
 @include media-query(medium) {
-  .hero__container {
-    & h1 {
-      font-size: 1.5rem;
-    }
-  }
-
-  .hero__wrapper {
+  
+  .hero__typewriter {
     .hero__text--static {
       font-size: 60px;
     }
@@ -93,12 +86,7 @@
 }
 
 @include media-query(large) {
-  .hero__container {
-    & h1 {
-      font-size: 1.8rem;
-    }
-  }
-  .hero__wrapper {
+  .hero__typewriter {
     .hero__text--static {
       font-size: 80px;
     }

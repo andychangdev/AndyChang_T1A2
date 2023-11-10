@@ -2,14 +2,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../css/style.css" />
     <title>Contact | Andy Chang</title>
   </head>
   <body>
     <header>
-      <nav class="nav__container">
-        <ul>
+      <!-- This is component no. 1 -->
+      <nav class="content-grid">
+        <ul class="breakout">
           <li><a href="../index.html">Work</a></li>
           <li><a href="./blog.html">Blog</a></li>
           <li><a href="./about.html">About</a></li>
@@ -17,22 +18,20 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>Wanna say hey?</h1>
-      <p>Feel free to pop me a message through this form -</p>
-      <p>I'd love to hear from you!</p>
-      <div class="form__container">
-      <form action="https://formspree.io/f/xleyvaad" method="POST">
-        <input type="email" name="email" placeholder="Your email" />
-        <textarea name="message" placeholder="Type your message here . . ."></textarea>
-        <button type="submit">.submit</button>
-      </form>
-    </div>
+    <main class="content-grid">
+        <section>
+          <h1>Wanna say hey?</h1>
+          <p>Feel free to pop me a message through this form -</p>
+          <p>I'd love to hear from you!</p>
+          <form action="https://formspree.io/f/xleyvaad" method="POST">
+            <input type="email" name="email" placeholder="Your email" />
+            <textarea name="message" placeholder="Type your message here . . ."></textarea>
+            <button type="submit">.submit</button>
+          </form>
+        </section>
     </main>
-    <footer>
-      <div class="footer__container">
-        <p class="copyright">&#169; ANDY CHANG 2023</p>
-      </div>
+    <footer class="content-grid">
+        <p class="breakout copyright">&#169; ANDY CHANG 2023</p>
     </footer>
   </body>
 </html>
