@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
 button {
-  color: $clr-primary;
+  color: $color-neutral;
   @include buttons;
 
   &:hover {
@@ -17,6 +17,6 @@ button {
 
 .btn.live {
   color: #fff;
-  background: #579adc;
-  border: 1px solid #579adc;
+  background: #f97d7d;
+  border: 1px solid #f97d7d;
 }

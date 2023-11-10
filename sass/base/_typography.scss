@@ -1,15 +1,5 @@
 @use "../abstracts" as *;
 
-.hero {
-  font-family: $ff-heading;
-
-  h1 {
-    font-size: 1.3rem;
-    font-weight: 500;
-  }
-
-}
-
 html {
   font-family: $ff-body;
   font-size: 1rem;
@@ -40,7 +30,7 @@ p {
 
 a {
   font-family: $ff-body;
-  color: $clr-primary;
+  color: $color-neutral;
   text-decoration: none;
 }
 
@@ -52,6 +42,15 @@ nav {
   text-transform: uppercase;
 }
 
+.hero {
+  font-family: $ff-heading;
+
+  h1 {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+}
+
 @include media-query(medium) {
   .hero {
     & h1 {
@@ -60,7 +59,7 @@ nav {
   }
 }
 
-@include media-query (large) {
+@include media-query(large) {
   .hero {
     & h1 {
       font-size: 1.8rem;
@@ -78,4 +77,3 @@ nav {
     font-size: 1.125rem;
   }
 }
-

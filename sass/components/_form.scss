@@ -17,13 +17,6 @@ input, textarea {
 
   &:focus {
     outline: none;
-    border: 2px solid $clr-secondary;
+    border: 2px solid $color-primary;
   }
 }
-
-// @include media-query (large) {
-//     .form__container {
-//         // width: 60%;
-//     }
-// }
-

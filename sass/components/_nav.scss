@@ -9,7 +9,7 @@ nav {
   }
 
   a:hover {
-    color: $clr-secondary;
+    color: $color-primary;
   }
 }
 
@@ -18,7 +18,7 @@ li {
 }
 
 li.selected a {
-  color: deepskyblue;
+  color: $color-primary;
 }
 
 @include media-query(xlarge) {

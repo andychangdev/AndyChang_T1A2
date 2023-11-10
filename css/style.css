@@ -103,14 +103,6 @@ svg {
     scroll-behavior: auto !important;
   }
 }
-.hero {
-  font-family: "Lora", Georgia, serif;
-}
-.hero h1 {
-  font-size: 1.3rem;
-  font-weight: 500;
-}
-
 html {
   font-family: "Karla", Verdana, sans-serif;
   font-size: 1rem;
@@ -151,6 +143,14 @@ nav {
   font-weight: 600;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
+}
+
+.hero {
+  font-family: "Lora", Georgia, serif;
+}
+.hero h1 {
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 @media only screen and (min-width: 768px) {
@@ -218,6 +218,10 @@ nav {
 
 .content-grid > .full-width {
   grid-column: full-width;
+}
+
+.center {
+  justify-items: center;
 }
 
 .hero {
@@ -390,6 +394,9 @@ button {
   transition: transform 0.3s ease-in-out;
 }
 button:hover {
+  color: #fff;
+  background: #7dc9f9;
+  border: 1px solid #7dc9f9;
   transform: scale(1.1);
 }
 button:hover {
@@ -407,13 +414,16 @@ button:hover {
   margin-right: 0.6rem;
 }
 .btn:hover {
+  color: #fff;
+  background: #7dc9f9;
+  border: 1px solid #7dc9f9;
   transform: scale(1.1);
 }
 
 .btn.live {
   color: #fff;
-  background: #579adc;
-  border: 1px solid #579adc;
+  background: #f97d7d;
+  border: 1px solid #f97d7d;
 }
 
 input, textarea {

@@ -1,3 +1,4 @@
+@use "./utilities" as *;
 @use "./breakpoints" as *;
 
 @mixin media-query($key) {
@@ -17,6 +18,9 @@
   transition: transform 0.3s ease-in-out;
 
   &:hover {
+    color: #fff;
+    background: $color-secondary;
+    border: 1px solid $color-secondary;
     transform: scale(1.1);
   }
 }
