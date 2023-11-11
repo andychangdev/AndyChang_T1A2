@@ -1,24 +1,33 @@
 @use "../abstracts" as *;
 
-html, body {
+html {
   font-family: "Karla";
   color: $color-neutral;
-  height: 100%;
   margin: 0;
 }
 
+html {
+  height: 100%;
+}
 body {
-  display: flex;
-  flex-direction: column;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-items: start;
+}
+footer {
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 main {
   margin: 3rem 0;
-  // width: 90%;
-  // max-width: 65rem;
-  flex: 1;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem; 
+}
+
+p {
+  margin-bottom: 1rem;
 }
