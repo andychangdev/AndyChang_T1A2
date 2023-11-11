@@ -1,0 +1,35 @@
+@use "../abstracts" as *;
+
+.tile {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 3rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.tile__img img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+@include media-query (xlarge) {
+  
+  .tile {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .tile__content {
+    margin: auto 0;
+  }
+
+  .tile__img.right {
+    grid-row-start: 1;
+    grid-column: 2/3;
+  }
+}
+
+

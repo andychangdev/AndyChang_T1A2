@@ -1,35 +1,19 @@
 @use "../abstracts" as *;
 
-.card {
+.card__container {
   display: grid;
   gap: 1rem;
-  margin-bottom: 3rem;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
-.card__img img {
-  max-width: 100%;
-  border-radius: 10px;
+.card__link {
+    &:hover {
+        transform: translateY(-10px);
+}
 }
 
-@include media-query (xlarge) {
-  
-  .card {
+@include media-query(small) {
+  .card__container {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
   }
-
-  .card__content {
-    margin: auto 0;
-  }
-
-  .card__img.img--right {
-    grid-row-start: 1;
-    grid-column: 2/3;
-  }
 }
-
-
