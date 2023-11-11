@@ -25,7 +25,7 @@ footer {
 }
 
 main {
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -471,4 +471,7 @@ input:focus, textarea:focus {
 }
 footer {
   background-color: lightblue;
+}
+footer .copyright {
+  margin: 1rem 0;
 }/*# sourceMappingURL=style.css.map */
