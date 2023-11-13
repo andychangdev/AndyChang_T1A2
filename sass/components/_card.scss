@@ -13,7 +13,7 @@
 
 .card__wrapper {
   display: grid;
-  grid-template-rows: 300px 108px;
+  grid-template-rows: 300px 110px;
   overflow: hidden;
 
   img {
@@ -42,6 +42,7 @@
   p {
     margin: 0;
     font-weight: bold;
+    margin-top: 0.1rem;
   }
 }
 
