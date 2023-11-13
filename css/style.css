@@ -164,9 +164,6 @@ nav a {
 }
 
 @media only screen and (min-width: 768px) {
-  .card {
-    outline: 1px solid green;
-  }
   .hero h1 {
     font-size: 1.5rem;
   }
@@ -175,9 +172,6 @@ nav a {
   }
 }
 @media only screen and (min-width: 992px) {
-  .card {
-    outline: 1px solid red;
-  }
   .hero h1 {
     font-size: 1.8rem;
   }
@@ -192,9 +186,6 @@ nav a {
   }
 }
 @media only screen and (min-width: 1200px) {
-  .card {
-    outline: 1px solid purple;
-  }
   .hero h1 {
     font-size: 1.8rem;
   }
@@ -221,7 +212,7 @@ nav a {
 
 .card__wrapper {
   display: grid;
-  grid-template-rows: 300px 80px;
+  grid-template-rows: 300px 108px;
   overflow: hidden;
 }
 .card__wrapper img {
@@ -243,6 +234,7 @@ nav a {
 
 .card__text {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 .card__text p {
@@ -250,6 +242,9 @@ nav a {
   font-weight: bold;
 }
 
+.card__tags {
+  margin-top: 0.3rem;
+}
 .card__tags span {
   font-size: 14px;
   font-family: "SourceCodePro";
@@ -263,7 +258,7 @@ nav a {
 }
 
 .card__hidden {
-  margin-top: 15px;
+  margin-top: 16px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -274,9 +269,6 @@ nav a {
   .card:hover {
     transform: scale(1.05);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  }
-  .card__wrapper {
-    grid-template-rows: 300px 100px;
   }
   .card__text {
     flex-direction: column;
@@ -291,6 +283,9 @@ nav a {
   }
   .card__text {
     flex-direction: row;
+  }
+  .card__tags {
+    margin-top: 0;
   }
 }
 .content-grid {

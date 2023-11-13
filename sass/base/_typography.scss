@@ -53,9 +53,6 @@ nav a {
 }
 
 @include media-query(medium) {
-  .card {
-    outline: 1px solid green;
-  }
   .hero {
     & h1 {
       font-size: 1.5rem;
@@ -68,9 +65,6 @@ nav a {
 }
 
 @include media-query(large) {
-   .card {
-    outline: 1px solid red;
-  }
   .hero {
     & h1 {
       font-size: 1.8rem;
@@ -91,9 +85,6 @@ nav a {
 }
 
 @include media-query(xlarge) {
-  .card {
-   outline: 1px solid purple;
- }
  .hero {
    & h1 {
      font-size: 1.8rem;

@@ -13,7 +13,7 @@
 
 .card__wrapper {
   display: grid;
-  grid-template-rows: 300px 80px;
+  grid-template-rows: 300px 108px;
   overflow: hidden;
 
   img {
@@ -36,6 +36,7 @@
 
 .card__text {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 
   p {
@@ -45,6 +46,7 @@
 }
 
 .card__tags {
+  margin-top: 0.3rem;
   span {
     font-size: 14px;
     font-family: "SourceCodePro";
@@ -60,7 +62,7 @@
 }
 
 .card__hidden {
-  margin-top: 15px;
+  margin-top: 16px;
 }
 
 @include media-query(medium) {
@@ -77,9 +79,6 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   }
 
-  .card__wrapper {
-    grid-template-rows: 300px 100px;
-  }
   .card__text {
     flex-direction: column;
   }
@@ -97,5 +96,9 @@
   }
   .card__text {
     flex-direction: row;
+  }
+
+  .card__tags {
+    margin-top: 0;
   }
 }
