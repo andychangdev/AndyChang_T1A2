@@ -29,15 +29,16 @@ p {
 }
 
 a {
+  font-size: 1rem;
   font-family: $ff-body;
   color: $color-neutral;
   text-decoration: none;
 }
 
-nav {
+nav a {
   font-family: $ff-body;
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
 }
@@ -52,39 +53,62 @@ nav {
 }
 
 @include media-query(medium) {
+  .card {
+    outline: 1px solid green;
+  }
   .hero {
     & h1 {
       font-size: 1.5rem;
     }
   }
-  
-  body {
-    font-size: 1.125rem;
-  }
+
   h1 {
     font-size: 3.2rem;
-  }
-
-  p {
-    font-size: 1.125rem;
   }
 }
 
 @include media-query(large) {
+   .card {
+    outline: 1px solid red;
+  }
   .hero {
     & h1 {
       font-size: 1.8rem;
     }
   }
-
-  body {
-    font-size: 1.125rem;
-  }
+  
   h1 {
     font-size: 4.5rem;
   }
 
-  p {
+  p, a {
     font-size: 1.125rem;
   }
+
+  nav a {
+  font-size: 1rem;
+  }
+}
+
+@include media-query(xlarge) {
+  .card {
+   outline: 1px solid purple;
+ }
+ .hero {
+   & h1 {
+     font-size: 1.8rem;
+   }
+ }
+ 
+ h1 {
+   font-size: 4.5rem;
+ }
+
+ p, a {
+   font-size: 1.125rem;
+ }
+ 
+ nav a {
+ font-size: 1.125rem;
+ }
 }

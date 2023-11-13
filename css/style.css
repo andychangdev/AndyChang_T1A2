@@ -141,15 +141,16 @@ p {
 }
 
 a {
+  font-size: 1rem;
   font-family: "Karla", Verdana, sans-serif;
   color: #5c5c5c;
   text-decoration: none;
 }
 
-nav {
+nav a {
   font-family: "Karla", Verdana, sans-serif;
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
 }
@@ -163,51 +164,138 @@ nav {
 }
 
 @media only screen and (min-width: 768px) {
+  .card {
+    outline: 1px solid green;
+  }
   .hero h1 {
     font-size: 1.5rem;
-  }
-  body {
-    font-size: 1.125rem;
   }
   h1 {
     font-size: 3.2rem;
   }
-  p {
-    font-size: 1.125rem;
-  }
 }
 @media only screen and (min-width: 992px) {
+  .card {
+    outline: 1px solid red;
+  }
   .hero h1 {
     font-size: 1.8rem;
-  }
-  body {
-    font-size: 1.125rem;
   }
   h1 {
     font-size: 4.5rem;
   }
-  p {
+  p, a {
+    font-size: 1.125rem;
+  }
+  nav a {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .card {
+    outline: 1px solid purple;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+  p, a {
+    font-size: 1.125rem;
+  }
+  nav a {
     font-size: 1.125rem;
   }
 }
 .card__container {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
+  margin: 1rem 0;
 }
 
-.card__link:hover {
-  transform: translateY(-10px);
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
-@media only screen and (min-width: 576px) {
+.card__wrapper {
+  display: grid;
+  grid-template-rows: 300px 80px;
+  overflow: hidden;
+}
+.card__wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__content {
+  padding: 1rem 2rem 10rem 2rem;
+  background-color: rgb(245, 245, 245);
+  transition: transform 0.5s ease-in-out;
+}
+.card__content time {
+  color: #6bb2df;
+  font-size: 13px;
+}
+
+.card__text {
+  display: flex;
+  justify-content: space-between;
+}
+.card__text p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.card__tags span {
+  font-size: 14px;
+  font-family: "SourceCodePro";
+  background: #f9f9fb;
+  border: 1px solid #ccc;
+  padding: 2px 4px;
+  margin-right: 0.2rem;
+}
+.card__tags span:last-child {
+  margin-right: 0;
+}
+
+.card__hidden {
+  margin-top: 15px;
+}
+
+@media only screen and (min-width: 768px) {
   .card__container {
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 3rem;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .card__wrapper {
+    grid-template-rows: 300px 100px;
+  }
+  .card__text {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .card__wrapper {
+    grid-template-rows: 300px 80px;
+  }
+  .card__content:hover {
+    transform: translateY(-70px);
+  }
+  .card__text {
+    flex-direction: row;
   }
 }
 .content-grid {
   --padding-inline: 2rem;
-  --content-max-width: 65rem;
+  --content-max-width: 75rem;
   --breakout-max-width: 85rem;
   --breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
   display: grid;
@@ -406,8 +494,8 @@ button {
 }
 button:hover {
   color: #fff;
-  background: #7dc9f9;
-  border: 1px solid #7dc9f9;
+  background: #6bb2df;
+  border: 1px solid #6bb2df;
   transform: scale(1.1);
 }
 button:hover {
@@ -426,8 +514,8 @@ button:hover {
 }
 .btn:hover {
   color: #fff;
-  background: #7dc9f9;
-  border: 1px solid #7dc9f9;
+  background: #6bb2df;
+  border: 1px solid #6bb2df;
   transform: scale(1.1);
 }
 
