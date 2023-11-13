@@ -100,6 +100,12 @@ nav a {
  }
  
  nav a {
- font-size: 1.125rem;
+ font-size: 1rem;
  }
+}
+
+@include media-query(xxlarge) {
+  nav a {
+    font-size: 1.125rem;
+    }
 }
