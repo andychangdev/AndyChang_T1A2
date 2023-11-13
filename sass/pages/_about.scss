@@ -9,6 +9,7 @@
   .grid img {
     max-height: 400px;
     border-radius: 10px;
+    margin-block: auto;
   }
   
   @include media-query (small) {
@@ -16,10 +17,5 @@
       display: grid;
       gap: 2rem;
       grid-template-columns: 1fr 1fr;
-    }
-
-    .grid img {
-        max-height: 400px;
-        margin-block: auto;
-      }
+        }
   }
