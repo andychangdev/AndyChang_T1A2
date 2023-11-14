@@ -1,6 +1,6 @@
 @use "../abstracts" as *;
 
-.about__grid {
+.about__container {
   display: grid;
   grid-template-rows: 1fr auto;
 
@@ -12,7 +12,7 @@
 }
 
 @include media-query(medium) {
-  .about__grid {
+  .about__container {
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr 1fr;
