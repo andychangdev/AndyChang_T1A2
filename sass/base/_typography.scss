@@ -43,6 +43,10 @@ nav a {
   text-transform: uppercase;
 }
 
+time {
+  font-family: $ff-heading;
+}
+
 .hero {
   font-family: $ff-heading;
 
@@ -70,7 +74,7 @@ nav a {
       font-size: 1.8rem;
     }
   }
-  
+
   h1 {
     font-size: 4.5rem;
   }
@@ -79,45 +83,47 @@ nav a {
     font-size: 1.2rem;
   }
 
-  p, a {
+  p,
+  a {
     font-size: 1.125rem;
   }
 
   nav a {
-  font-size: 1rem;
+    font-size: 1rem;
   }
 }
 
 @include media-query(xlarge) {
- .hero {
-   & h1 {
-     font-size: 1.8rem;
-   }
- }
- 
- h1 {
-   font-size: 4.5rem;
- }
+  .hero {
+    & h1 {
+      font-size: 1.8rem;
+    }
+  }
 
- h2 {
-  font-size: 1.8rem ;
- }
+  h1 {
+    font-size: 4.5rem;
+  }
 
- h3 {
-  font-size: 1.2rem;
- }
+  h2 {
+    font-size: 1.8rem;
+  }
 
- p, a {
-   font-size: 1.125rem;
- }
- 
- nav a {
- font-size: 1rem;
- }
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p,
+  a {
+    font-size: 1.125rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
 }
 
 @include media-query(xxlarge) {
   nav a {
     font-size: 1.125rem;
-    }
+  }
 }
