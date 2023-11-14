@@ -13,6 +13,7 @@
 .tile__img img {
   max-width: 100%;
   border-radius: 10px;
+  margin-block: auto;
 }
 
 @include media-query (medium) {
@@ -20,6 +21,14 @@
   .tile {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
+  }
+
+  .tile__img {
+    margin: auto 0;
+  }
+
+  .tile__img img {
+    min-height: 220px;
   }
 
   .tile__content {
