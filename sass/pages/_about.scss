@@ -29,7 +29,7 @@
     display: inline-block;
     margin: 0 1.5rem 1.5rem 0;
     text-align: center;
-    padding: 1.9rem;
+    padding: 2rem;
     transition: transform 0.3s ease-in-out;
 
     &:hover {
@@ -41,5 +41,9 @@
 @include media-query(medium) {
   .icons__about {
     justify-content: start;
+
+    span {
+      padding: 1.9rem;
+    }
   }
 }
