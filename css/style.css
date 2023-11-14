@@ -29,7 +29,7 @@ p, ol, a {
   font-size: 1rem;
   font-weight: 400;
   text-decoration: none;
-  color: #5c5c5c;
+  color: #4d4d4d;
 }
 
 nav a {
@@ -89,7 +89,7 @@ b {
 }
 html {
   font-family: "Karla";
-  color: #5c5c5c;
+  color: #4d4d4d;
   margin: 0;
 }
 
@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
 }
 
-p, ol {
+p, ol, button {
   margin-bottom: 1rem;
 }
 
@@ -383,10 +383,32 @@ li.selected a {
   }
 }
 footer {
-  background-color: lightblue;
+  background-color: #f9f9fb;
 }
-footer .copyright {
-  margin: 1rem 0;
+
+.copyright {
+  margin: 0;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 0.5rem;
+}
+
+.icons__footer {
+  display: flex;
+  margin-block: 0.5rem;
+}
+.icons__footer span {
+  display: inline-block;
+  padding: 1rem;
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+.icons__footer span:hover {
+  transform: scale(1.2);
 }
 
 input, textarea {
@@ -430,43 +452,6 @@ input:focus, textarea:focus {
     grid-column: 2/3;
   }
 }
-.icons__row {
-  display: flex;
-  margin-bottom: 1rem;
-}
-.icons__row p {
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin: 0 1rem 0 0;
-}
-.icons__row span {
-  display: inline-block;
-  margin-right: 1rem;
-  text-align: center;
-  padding: 0.8rem;
-  transition: transform 0.3s ease-in-out;
-}
-.icons__row span:hover {
-  transform: scale(1.2);
-}
-
-.icons__flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: 1rem;
-}
-.icons__flex span {
-  display: inline-block;
-  margin: 0 1.5rem 1.5rem 0;
-  text-align: center;
-  padding: 2rem;
-  transition: transform 0.3s ease-in-out;
-}
-.icons__flex span:hover {
-  transform: scale(1.2);
-}
-
 @media only screen and (min-width: 768px) {
   .icons__flex {
     justify-content: start;
@@ -508,8 +493,20 @@ input:focus, textarea:focus {
   background: url("https://api.iconify.design/devicon/git.svg") no-repeat center center/contain;
 }
 
+.icon__github {
+  background: url("https://api.iconify.design/mdi/github.svg?color=%234d4d4d") no-repeat center center/contain;
+}
+
+.icon__linkedin {
+  background: url("https://api.iconify.design/uil/linkedin.svg?color=%234d4d4d") no-repeat center center/contain;
+}
+
+.icon__instagram {
+  background: url("https://api.iconify.design/ri/instagram-line.svg?color=%234d4d4d") no-repeat center center/contain;
+}
+
 button {
-  color: #5c5c5c;
+  color: #4d4d4d;
   font-family: "SourceCodePro";
   background: #f9f9fb;
   border: 1px solid #ccc;
@@ -613,6 +610,26 @@ button:hover {
   margin-top: 16px;
 }
 
+.icons__card {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.icons__card p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0 1rem 0 0;
+}
+.icons__card span {
+  display: inline-block;
+  margin-right: 1rem;
+  text-align: center;
+  padding: 0.8rem;
+  transition: transform 0.3s ease-in-out;
+}
+.icons__card span:hover {
+  transform: scale(1.2);
+}
+
 @media only screen and (min-width: 768px) {
   .card__container {
     grid-template-columns: 1fr 1fr;
@@ -657,6 +674,23 @@ button:hover {
     grid-template-columns: 1fr 1fr;
   }
 }
+.icons__about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+.icons__about span {
+  display: inline-block;
+  margin: 0 1.5rem 1.5rem 0;
+  text-align: center;
+  padding: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+.icons__about span:hover {
+  transform: scale(1.2);
+}
+
 .blog__wrapper {
   max-width: 100ch;
 }

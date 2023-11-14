@@ -66,6 +66,28 @@
   margin-top: 16px;
 }
 
+.icons__card {
+  display: flex;
+  margin-bottom: 1rem;
+
+  p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 1rem 0 0;
+  }
+
+  span {
+    display: inline-block;
+    margin-right: 1rem;
+    text-align: center;
+    padding: 0.8rem;
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
 @include media-query(medium) {
   // .card {
   //   outline: 1px solid green;
