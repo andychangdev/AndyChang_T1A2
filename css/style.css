@@ -462,7 +462,7 @@ input:focus, textarea:focus {
 .icons__flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 1rem;
 }
 .icons__flex span {
