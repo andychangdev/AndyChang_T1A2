@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>The 7-1 Pattern | Andy Chang</title>
+  </head>
+  <body>
+    <header  class="content-grid">
+      <!-- This is component no. 1 -->
+      <div class="primary-nav breakout">
+        <div class="logo">
+          <a href="/index.html">
+            <img src="/images/logo.svg" alt="">
+          </a>
+      </div>
+        <nav>
+        <ul>
+          <li><a href="/index.html">Work</a></li>
+          <li class="selected"><a href="../blog.html">Blog</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+    <main class="content-grid">
+      <h1 class="blog__heading">SMOL CSS Breakout Grid</h1>
+      <time class="blog__time" datetime="2023-11-17">November 17, 2023</time>
+      <div class="blog__wrapper">
+        <img src="/images/blog-img/7-1-pattern.png" alt="picture of 7-1 pattern"/>
+        <p class="blog__notes"><span>Disclaimer:</span> This article was written by ChatGPT, an AI language model developed by OpenAI</p>
+        <p>In the realm of front-end development, managing large CSS projects efficiently poses a significant challenge. The 7-1 pattern, also known as the 7-in-1 pattern, is an architectural approach that aims to bring organization, scalability, and maintainability to CSS codebases. Let's explore the fundamental concepts and benefits of the 7-1 pattern.</p>
+
+    <h2>Understanding the 7-1 Pattern</h2>
+
+    <p>The 7-1 pattern is a folder structure and file organization strategy for managing CSS stylesheets in large-scale projects. It consists of:</p>
+
+    <ol>
+        <li><b>Base:</b> Contains the foundational styles applicable throughout the project, such as resets, typography definitions, and base HTML element styles.</li>
+        <li><b>Components:</b> Houses individual UI components, each in a separate file. Components are self-contained and reusable entities like buttons, navigation bars, or cards.</li>
+        <li><b>Layout:</b> Handles the overall layout structure of the application or website, including grid systems, positioning, and container styles.</li>
+        <li><b>Pages:</b> Stores specific styles for individual pages. Each page of the application or website gets its dedicated file to manage unique styles.</li>
+        <li><b>Themes:</b> Contains different visual themes or variations of the design, making it easier to switch between different styles or brand identities.</li>
+        <li><b>Abstracts:</b> Holds global variables, mixins, functions, and other tools used across the project to maintain consistency and ease of maintenance.</li>
+        <li><b>Vendors:</b> Contains third-party or external CSS files, such as libraries, frameworks, or external plugins, to separate them from project-specific styles.</li>
+    </ol>
+
+    <h2>Benefits of the 7-1 Pattern</h2>
+
+    <p><b>1. Organization:</b></p> 
+    <p>The clear folder structure helps in logically organizing styles, making it easier to find and update specific components or sections.</p>
+
+    <p><b>2. Modularity and Reusability:</b></p>
+    <p>Splitting styles into components fosters modularity, allowing for easy reuse of UI elements across the project.</p>
+
+    <p><b>3. Scalability and Maintainability:</b></p>
+     <p>Separating concerns and encapsulating styles in specific directories makes it more manageable to scale the project without causing conflicts or style bloat.</p>
+
+    <h2>Implementing the 7-1 Pattern</h2>
+
+    <p>Adopting the 7-1 pattern involves organizing your CSS files into the seven directories as described above and ensuring consistency in naming conventions and file structures.</p>
+
+    <h2>Conclusion</h2>
+
+    <p>The 7-1 pattern provides a systematic and scalable approach to structuring CSS codebases, offering clarity, maintainability, and flexibility in managing large projects. By embracing this architecture, front-end developers can effectively organize their stylesheets, leading to more maintainable and efficient codebases.</p>
+      </div>
+    </main>
+    <footer class="content-grid">
+      <p class="breakout copyright">&#169; ANDY CHANG 2023</p>
+    </footer>
+  </body>
+</html>

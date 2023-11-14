@@ -24,7 +24,7 @@ h3 {
   font-weight: 600;
 }
 
-p {
+p, ol {
   font-family: "Karla", Verdana, sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -57,6 +57,10 @@ time {
   font-weight: 500;
 }
 
+b {
+  font-weight: bold;
+}
+
 @media only screen and (min-width: 768px) {
   .hero h1 {
     font-size: 1.5rem;
@@ -73,10 +77,10 @@ time {
     font-size: 4.5rem;
   }
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
   p,
-  a {
+  a, ol {
     font-size: 1.125rem;
   }
   nav a {
@@ -89,12 +93,6 @@ time {
   }
   h1 {
     font-size: 4.5rem;
-  }
-  h2 {
-    font-size: 1.8rem;
-  }
-  h3 {
-    font-size: 1.2rem;
   }
   p,
   a {
@@ -139,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
 }
 
-p {
+p, ol {
   margin-bottom: 1rem;
 }
 
@@ -252,9 +250,17 @@ svg {
 
 .logo {
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin: 1rem 0;
+  background-color: #00bfff;
+  border-radius: 2px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  background-color: #f97d7d;
+  transform: scale(1.1);
 }
 
 .logo img {
@@ -277,7 +283,7 @@ nav ul {
   justify-content: center;
 }
 nav a:hover {
-  color: deepskyblue;
+  color: #f97d7d;
 }
 
 li {
@@ -285,7 +291,7 @@ li {
 }
 
 li.selected a {
-  color: deepskyblue;
+  color: #00bfff;
 }
 
 @media only screen and (min-width: 992px) {
@@ -293,8 +299,8 @@ li.selected a {
     flex-direction: row;
   }
   .logo {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin: 2rem 0;
     margin-right: 1rem;
   }
@@ -317,7 +323,7 @@ li.selected a {
 }
 .hero__typewriter .hero__text--dynamic li {
   list-style: none;
-  color: deepskyblue;
+  color: #00bfff;
   font-size: 40px;
   font-weight: 500;
   top: 0;
@@ -341,7 +347,7 @@ li.selected a {
   height: 100%;
   width: 100%;
   background-color: #fff;
-  border-left: 2px solid deepskyblue;
+  border-left: 2px solid #00bfff;
   animation: typing 3s steps(10) infinite;
 }
 
@@ -407,7 +413,7 @@ input, textarea {
 }
 input:focus, textarea:focus {
   outline: none;
-  border: 2px solid deepskyblue;
+  border: 2px solid #00bfff;
 }
 
 .tile {
@@ -626,6 +632,7 @@ button:hover {
   max-height: 400px;
   border-radius: 10px;
   margin-block: auto;
+  margin-bottom: 1rem;
 }
 
 @media only screen and (min-width: 576px) {
@@ -652,6 +659,17 @@ button:hover {
 .blog__time {
   color: #6bb2df;
   font-weight: 500;
+}
+
+.blog__notes {
+  background: #e0f3ff;
+  padding: 0.5rem;
+  font-weight: bold;
+  border-left: 5px solid #f97d7d;
+}
+.blog__notes span {
+  color: #f97d7d;
+  margin-right: 0.3rem;
 }
 
 @media only screen and (min-width: 992px) {

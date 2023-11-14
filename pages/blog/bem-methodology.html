@@ -1,0 +1,117 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>BEM Methodology | Andy Chang</title>
+  </head>
+  <body>
+    <header class="content-grid">
+      <!-- This is component no. 1 -->
+      <div class="primary-nav breakout">
+        <div class="logo">
+          <a href="/index.html">
+            <img src="/images/logo.svg" alt="" />
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/index.html">Work</a></li>
+            <li class="selected"><a href="../blog.html">Blog</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="content-grid">
+      <h1 class="blog__heading">SMOL CSS Breakout Grid</h1>
+      <time class="blog__time" datetime="2023-11-17">November 17, 2023</time>
+      <div class="blog__wrapper">
+        <img src="/images/blog-img/bem-methodology.png" alt="picture of bem methodology"/>
+        <p class="blog__notes"><span>Disclaimer:</span> This article was written by ChatGPT, an AI language model developed by OpenAI</p>
+        <p>
+          Web development often involves managing complex CSS stylesheets that
+          can become challenging to maintain as a project grows. The BEM (Block,
+          Element, Modifier) methodology is a naming convention for CSS classes
+          that helps developers create modular and reusable code. Let's dive
+          into the key concepts of BEM and how it can enhance your CSS
+          development workflow.
+        </p>
+
+        <h2>Understanding BEM</h2>
+
+        <p>
+          BEM breaks down the structure of a webpage into three main entities:
+          Blocks, Elements, and Modifiers.
+        </p>
+
+        <p>
+          <b>Block:</b> The primary building block of a webpage. It represents a
+          standalone entity that is meaningful on its own, such as a navigation
+          bar, a header, or a button.
+        </p>
+
+        <p>
+          <b>Element:</b> A part of a block that has no standalone meaning and
+          is semantically tied to its block. For example, in a block
+          representing a card, an element might be the title or the image.
+        </p>
+
+        <p>
+          <b>Modifier:</b> A flag on a block or element that changes its
+          appearance or behavior. It is added to a block or element class as an
+          extra identifier. For instance, a button with a primary color modifier
+          could be .button--primary.
+        </p>
+
+        <h2>Benefits of BEM</h2>
+
+        <p><b>1. Readability and Maintainability:</b></p>
+
+        <p>
+          BEM's naming convention makes it clear and easy to understand the
+          purpose of each class. This clarity significantly improves code
+          readability, making it simpler for developers to understand the
+          structure of a webpage.
+        </p>
+
+        <p><b>2. Reusability:</b></p>
+        <p>
+          the creation of modular components. Blocks and elements can be reused
+          across different parts of a website without worrying about unintended
+          style conflicts.
+        </p>
+
+        <p>
+          <b>3. Scalability:</b></p> 
+          <p> As a project grows, BEM scales well. The naming
+          structure allows developers to add new features and components without
+          fear of naming collisions or unexpected side effects.
+        </p>
+
+        <h2>Implementing BEM</h2>
+
+        <p>
+          Implementing BEM involves applying the BEM naming convention to your
+          class attributes.
+        </p>
+
+        <h2>Conclusion</h2>
+
+        <p>
+          BEM is a powerful methodology that brings order and structure to your
+          CSS code. By following a consistent naming convention, developers can
+          create maintainable, scalable, and reusable stylesheets. Whether
+          you're working on a small project or a large-scale application,
+          incorporating BEM into your workflow can lead to more efficient and
+          collaborative development.
+        </p>
+      </div>
+    </main>
+    <footer class="content-grid">
+      <p class="breakout copyright">&#169; ANDY CHANG 2023</p>
+    </footer>
+  </body>
+</html>
