@@ -15,7 +15,7 @@ h1 {
 h2 {
   font-family: "Lora", Georgia, serif;
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h3 {
@@ -220,18 +220,6 @@ svg {
 @font-face {
   font-family: "SourceCodePro";
   src: url("/font/SourceCodePro-VariableFont_wght.ttf") format("truetype");
-}
-@font-face {
-  font-family: "HanWangMingMedium";
-  src: url("/font/HanWangMingMedium.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Mingliu";
-  src: url("/font/mingliu.TTF") format("truetype");
-}
-@font-face {
-  font-family: "Simfang";
-  src: url("/font/simfang.ttf") format("truetype");
 }
 .content-grid {
   --padding-inline: 2rem;
