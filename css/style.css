@@ -701,7 +701,7 @@ button:hover {
   display: inline-block;
   margin: 0 1.5rem 1.5rem 0;
   text-align: center;
-  padding: 1.9rem;
+  padding: 2rem;
   transition: transform 0.3s ease-in-out;
 }
 .icons__about span:hover {
@@ -711,6 +711,9 @@ button:hover {
 @media only screen and (min-width: 768px) {
   .icons__about {
     justify-content: start;
+  }
+  .icons__about span {
+    padding: 1.9rem;
   }
 }
 .blog__wrapper {
