@@ -426,7 +426,7 @@ input, textarea {
 }
 input:focus, textarea:focus {
   outline: none;
-  border: 2px solid #00bfff;
+  border: 2px solid #f97d7d;
 }
 
 .tile {
