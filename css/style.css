@@ -459,6 +459,25 @@ input:focus, textarea:focus {
   padding: 0.8rem;
 }
 
+.icons__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-bottom: 1rem;
+}
+.icons__flex span {
+  display: inline-block;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .icons__flex {
+    justify-content: start;
+  }
+}
 .icon__html {
   background: url("https://api.iconify.design/vscode-icons/file-type-html.svg") no-repeat center center/contain;
 }
@@ -489,6 +508,10 @@ input:focus, textarea:focus {
 
 .icon__mongodb {
   background: url("https://api.iconify.design/devicon/mongodb-wordmark.svg") no-repeat center center/contain;
+}
+
+.icon__git {
+  background: url("https://api.iconify.design/devicon/git.svg") no-repeat center center/contain;
 }
 
 button {

@@ -18,6 +18,27 @@
   }
 }
 
+.icons__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-bottom: 1rem;
+
+  span {
+    display: inline-block;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 2rem;
+  }
+}
+
+@include media-query (medium) {
+  .icons__flex {
+    justify-content:start;
+  }
+}
+
 .icon__html {
   background: url("https://api.iconify.design/vscode-icons/file-type-html.svg")
     no-repeat center center / contain;
@@ -50,3 +71,9 @@
   background: url("https://api.iconify.design/devicon/mongodb-wordmark.svg")
     no-repeat center center / contain;
 }
+
+.icon__git {
+  background: url('https://api.iconify.design/devicon/git.svg') no-repeat center center / contain;
+}
+
+
