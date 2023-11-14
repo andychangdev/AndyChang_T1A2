@@ -1,11 +1,5 @@
 @use "../abstracts" as *;
 
-@include media-query(medium) {
-  .icons__flex {
-    justify-content: start;
-  }
-}
-
 .icon__html {
   background: url("https://api.iconify.design/vscode-icons/file-type-html.svg")
     no-repeat center center / contain;

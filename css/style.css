@@ -456,11 +456,6 @@ input:focus, textarea:focus {
     grid-column: 2/3;
   }
 }
-@media only screen and (min-width: 768px) {
-  .icons__flex {
-    justify-content: start;
-  }
-}
 .icon__html {
   background: url("https://api.iconify.design/vscode-icons/file-type-html.svg") no-repeat center center/contain;
 }
@@ -704,6 +699,11 @@ button:hover {
   transform: scale(1.2);
 }
 
+@media only screen and (min-width: 768px) {
+  .icons__about {
+    justify-content: start;
+  }
+}
 .blog__wrapper {
   max-width: 100ch;
 }
