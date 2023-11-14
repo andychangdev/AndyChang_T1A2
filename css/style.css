@@ -285,6 +285,9 @@ nav ul {
 nav a:hover {
   color: #f97d7d;
 }
+nav a:active {
+  color: #f97d7d;
+}
 
 li {
   margin: 0 0.7rem;
