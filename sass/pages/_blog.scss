@@ -1,0 +1,27 @@
+@use '../abstracts' as *;
+
+.blog__wrapper {
+    max-width: 100ch;
+
+    img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .blog__heading {
+    margin: 0;
+  }
+  .blog__time {
+    color: $color-secondary;
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+
+  @include media-query (large) {
+    .blog__time {
+      font-size: 1.125rem;
+    }
+  }
