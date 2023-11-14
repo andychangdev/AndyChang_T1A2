@@ -22,17 +22,12 @@ h3 {
   font-weight: 600;
 }
 
-p, ol {
+p, ol, a {
   font-family: $ff-body;
   font-size: 1rem;
   font-weight: 400;
-}
-
-a {
-  font-size: 1rem;
-  font-family: $ff-body;
-  color: $color-neutral;
   text-decoration: none;
+  color: $color-neutral;
 }
 
 nav a {
@@ -47,6 +42,10 @@ time {
   font-family: $ff-heading;
 }
 
+b {
+  font-weight: bold;
+}
+
 .hero {
   font-family: $ff-heading;
 
@@ -56,28 +55,20 @@ time {
   }
 }
 
-b {
-  font-weight: bold;
-}
 @include media-query(medium) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
+
   .hero {
     & h1 {
       font-size: 1.5rem;
     }
   }
 
-  h1 {
-    font-size: 3.2rem;
-  }
-}
 
 @include media-query(large) {
-  .hero {
-    & h1 {
-      font-size: 1.8rem;
-    }
-  }
-
   h1 {
     font-size: 4.5rem;
   }
@@ -86,34 +77,18 @@ b {
     font-size: 1.8rem;
   }
 
-  p,
-  a, ol {
+  p, ol, a {
     font-size: 1.125rem;
   }
 
   nav a {
     font-size: 1rem;
   }
-}
 
-@include media-query(xlarge) {
   .hero {
     & h1 {
       font-size: 1.8rem;
     }
-  }
-
-  h1 {
-    font-size: 4.5rem;
-  }
-
-  p,
-  a {
-    font-size: 1.125rem;
-  }
-
-  nav a {
-    font-size: 1rem;
   }
 }
 

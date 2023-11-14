@@ -24,17 +24,12 @@ h3 {
   font-weight: 600;
 }
 
-p, ol {
+p, ol, a {
   font-family: "Karla", Verdana, sans-serif;
   font-size: 1rem;
   font-weight: 400;
-}
-
-a {
-  font-size: 1rem;
-  font-family: "Karla", Verdana, sans-serif;
-  color: #5c5c5c;
   text-decoration: none;
+  color: #5c5c5c;
 }
 
 nav a {
@@ -49,6 +44,10 @@ time {
   font-family: "Lora", Georgia, serif;
 }
 
+b {
+  font-weight: bold;
+}
+
 .hero {
   font-family: "Lora", Georgia, serif;
 }
@@ -57,49 +56,30 @@ time {
   font-weight: 500;
 }
 
-b {
-  font-weight: bold;
-}
-
 @media only screen and (min-width: 768px) {
-  .hero h1 {
-    font-size: 1.5rem;
-  }
   h1 {
     font-size: 3.2rem;
   }
 }
+.hero h1 {
+  font-size: 1.5rem;
+}
+
 @media only screen and (min-width: 992px) {
-  .hero h1 {
-    font-size: 1.8rem;
-  }
   h1 {
     font-size: 4.5rem;
   }
   h2 {
     font-size: 1.8rem;
   }
-  p,
-  a, ol {
+  p, ol, a {
     font-size: 1.125rem;
   }
   nav a {
     font-size: 1rem;
   }
-}
-@media only screen and (min-width: 1200px) {
   .hero h1 {
     font-size: 1.8rem;
-  }
-  h1 {
-    font-size: 4.5rem;
-  }
-  p,
-  a {
-    font-size: 1.125rem;
-  }
-  nav a {
-    font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
