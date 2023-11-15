@@ -29,7 +29,7 @@ p, ol, a {
   font-size: 1rem;
   font-weight: 400;
   text-decoration: none;
-  color: #4d4d4d;
+  color: #343434;
 }
 
 nav a {
@@ -89,7 +89,7 @@ b {
 }
 html {
   font-family: "Karla";
-  color: #4d4d4d;
+  color: #343434;
   margin: 0;
 }
 
@@ -237,13 +237,13 @@ svg {
   width: 40px;
   height: 40px;
   margin: 1rem 0;
-  background-color: #00bfff;
+  background-color: deepskyblue;
   border-radius: 2px;
   transition: transform 0.3s ease-in-out;
 }
 
 .logo:hover {
-  background-color: #f97d7d;
+  background-color: lightcoral;
   transform: scale(1.1);
 }
 
@@ -267,10 +267,10 @@ nav ul {
   justify-content: center;
 }
 nav a:hover {
-  color: #f97d7d;
+  color: lightcoral;
 }
 nav a:active {
-  color: #f97d7d;
+  color: lightcoral;
 }
 
 li {
@@ -278,7 +278,7 @@ li {
 }
 
 li.selected a {
-  color: #00bfff;
+  color: deepskyblue;
 }
 
 @media only screen and (min-width: 992px) {
@@ -310,7 +310,7 @@ li.selected a {
 }
 .hero__typewriter .hero__text--dynamic li {
   list-style: none;
-  color: #00bfff;
+  color: deepskyblue;
   font-size: 40px;
   font-weight: 500;
   top: 0;
@@ -334,7 +334,7 @@ li.selected a {
   height: 100%;
   width: 100%;
   background-color: #fff;
-  border-left: 2px solid #00bfff;
+  border-left: 2px solid deepskyblue;
   animation: typing 3s steps(10) infinite;
 }
 
@@ -426,7 +426,7 @@ input, textarea {
 }
 input:focus, textarea:focus {
   outline: none;
-  border: 2px solid #f97d7d;
+  border: 2px solid lightcoral;
 }
 
 .tile {
@@ -523,7 +523,7 @@ input:focus, textarea:focus {
   }
 }
 button {
-  color: #4d4d4d;
+  color: #343434;
   font-family: "SourceCodePro";
   background: #f9f9fb;
   border: 1px solid #ccc;
@@ -560,8 +560,8 @@ button:hover {
 
 .btn.live {
   color: #fff;
-  background: #f97d7d;
-  border: 1px solid #f97d7d;
+  background: lightcoral;
+  border: 1px solid lightcoral;
 }
 
 .card__container {
@@ -739,10 +739,10 @@ button:hover {
   background: #e0f3ff;
   padding: 0.5rem;
   font-weight: bold;
-  border-left: 5px solid #f97d7d;
+  border-left: 5px solid lightcoral;
 }
 .blog__notes span {
-  color: #f97d7d;
+  color: lightcoral;
   margin-right: 0.3rem;
 }
 
