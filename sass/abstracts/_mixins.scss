@@ -24,3 +24,9 @@
     transform: scale(1.1);
   }
 }
+
+@include media-query (large) {
+  .example {
+    border: 1px solid red;
+  }
+}
