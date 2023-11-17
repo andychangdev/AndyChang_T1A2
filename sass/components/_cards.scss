@@ -9,12 +9,14 @@
 .card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
 }
 
 .card__wrapper {
   display: grid;
-  grid-template-rows: 300px 110px;
   overflow: hidden;
+  grid-template-rows: 300px 105px;
+  border-radius: 10px;
 
   img {
     width: 100%;
@@ -63,29 +65,7 @@
 }
 
 .card__hidden {
-  margin-top: 16px;
-}
-
-.icons__card {
-  display: flex;
-  margin-bottom: 1rem;
-
-  p {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin: 0 1rem 0 0;
-  }
-
-  span {
-    display: inline-block;
-    margin-right: 1rem;
-    text-align: center;
-    padding: 0.8rem;
-    transition: transform 0.3s ease-in-out;
-    &:hover {
-      transform: scale(1.2);
-    }
-  }
+  margin-top: 1rem;
 }
 
 @include media-query(medium) {

@@ -25,11 +25,15 @@ main {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 1rem; 
+  margin-bottom: $spacer-400; 
 }
 
 p, ol, button {
-  margin-bottom: 1rem;
+  margin-bottom: $spacer-400;
+}
+
+a {
+  margin-bottom: $spacer-400;
 }
 
 form {

@@ -7,7 +7,7 @@
       width: 100%;
       max-width: 800px;
       border-radius: 20px;
-      margin: 2rem 0;
+      margin-bottom: $spacer-400;
     }
   }
 
@@ -17,6 +17,7 @@
   .blog__time {
     color: $color-accent-1;
     font-weight: 500;
+    margin-bottom: $spacer-400;
   }
 
   .blog__notes {
