@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="./misc/readme-docs/readme-banner.png" alt="Markdownify"></img>
+  <img src="./docs/readme-banner.png" alt="Markdownify"></img>
   <br>
   Andy Chang
   <br>
@@ -29,7 +29,7 @@
   <a href="#📚-techstack">Techstack</a>
 </p>
 
-![screenshot](./misc/readme-docs/screencapture.gif)
+![screenshot](./docs/screencapture.gif)
 
 ## 💡 Purpose
 
@@ -50,14 +50,18 @@
 
 ## 🗺️ Sitemap
 
-![screenshot](./misc/readme-docs/sitemap.png)
+![screenshot](./docs/sitemap.png)
 
 ## 📸 Screenshots
 
-![screenshot](./misc/readme-docs/webcapture1.jpeg)
-![screenshot](./misc/readme-docs/webcapture2.jpeg)
-![screenshot](./misc/readme-docs/webcapture3.jpeg)
-![screenshot](./misc/readme-docs/webcapture4.jpeg)
+![screenshot](./docs/webcapture1.jpeg)
+
+![screenshot](./docs/webcapture2.jpeg)
+
+![screenshot](./docs/webcapture3.jpeg)
+
+![screenshot](./docs/webcapture4.jpeg)
+
 ## 🎯 Target Audience
 
 My target audience is geared towards companies seeking to hire web developers for their teams and other professionals in web development field looking for potential collaboration opportunities

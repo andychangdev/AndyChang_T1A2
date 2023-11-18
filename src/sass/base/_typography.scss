@@ -1,0 +1,99 @@
+@use "../abstracts" as *;
+
+html {
+  font-family: $ff-body;
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: $ff-heading;
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-family: $ff-heading;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: $ff-body;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+p, ol, a {
+  font-family: $ff-body;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: $color-neutral;
+}
+
+nav a {
+  font-family: $ff-body;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}
+
+time {
+  font-family: $ff-heading;
+}
+
+b {
+  font-weight: bold;
+}
+
+.hero {
+  font-family: $ff-heading;
+
+  h1 {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+}
+
+@include media-query(medium) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
+
+  .hero {
+    & h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+
+@include media-query(large) {
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p, ol, a {
+    font-size: 1.125rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  .hero {
+    & h1 {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@include media-query(xxlarge) {
+  nav a {
+    font-size: 1.125rem;
+  }
+}

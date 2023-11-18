@@ -1,0 +1,63 @@
+@use "../abstracts" as *;
+
+.icon__html {
+  background: url("https://api.iconify.design/vscode-icons/file-type-html.svg")
+    no-repeat center center / contain;
+}
+.icon__css {
+  background: url("https://api.iconify.design/vscode-icons/file-type-css.svg")
+    no-repeat center center / contain;
+}
+.icon__sass {
+  background: url("https://api.iconify.design/skill-icons/sass.svg") no-repeat
+    center center / contain;
+}
+.icon__javascript {
+  background: url("https://api.iconify.design/logos/javascript.svg") no-repeat
+    center center / contain;
+}
+.icon__python {
+  background: url("https://api.iconify.design/logos/python.svg") no-repeat
+    center center / contain;
+}
+.icon__reactjs {
+  background: url("https://api.iconify.design/vscode-icons/file-type-reactjs.svg")
+    no-repeat center center / contain;
+}
+.icon__nodejs {
+  background: url("https://api.iconify.design/devicon/nodejs.svg") no-repeat
+    center center / contain;
+}
+.icon__mongodb {
+  background: url("https://api.iconify.design/devicon/mongodb-wordmark.svg")
+    no-repeat center center / contain;
+}
+.icon__git {
+  background: url("https://api.iconify.design/devicon/git.svg") no-repeat center
+    center / contain;
+}
+.icon__github {
+  background: url("https://api.iconify.design/mdi/github.svg?color=%234d4d4d") no-repeat center
+    center / contain;
+}
+.icon__linkedin {
+  background: url("https://api.iconify.design/uil/linkedin.svg?color=%234d4d4d") no-repeat
+    center center / contain;
+}
+.icon__instagram {
+  background: url('https://api.iconify.design/ri/instagram-line.svg?color=%234d4d4d') no-repeat center center / contain;
+}
+
+@media(hover: hover) and (pointer: fine) {
+  .icon__instagram:hover {
+    background: url('https://api.iconify.design/ri/instagram-line.svg?color=%23f97d7d') no-repeat center center / contain;
+  }
+
+  .icon__github:hover {
+    background: url('https://api.iconify.design/mdi/github.svg?color=%23f97d7d') no-repeat center center / contain;
+  }
+
+  .icon__linkedin:hover {
+    background: url('https://api.iconify.design/uil/linkedin.svg?color=%23f97d7d') no-repeat center center / contain;
+  }
+}
