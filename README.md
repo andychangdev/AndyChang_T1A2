@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="./docs/readme-banner.png" alt="Markdownify"></img>
+  <img src="./misc/readme-docs/readme-banner.png" alt="Markdownify"></img>
   <br>
   Andy Chang
   <br>
