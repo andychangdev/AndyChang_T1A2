@@ -71,3 +71,12 @@ li.selected a {
     margin-right: 1rem;
   }
 }
+
+@include media-query(xxlarge) {
+
+  .logo {
+    width: 70px;
+    height: 70px;
+    margin-right: 3rem;
+  }
+}
