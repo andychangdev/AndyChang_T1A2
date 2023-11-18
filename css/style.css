@@ -91,6 +91,7 @@ b {
 @media only screen and (min-width: 1600px) {
   nav a {
     font-size: 1.125rem;
+    font-weight: bold;
   }
 }
 html {
@@ -310,7 +311,7 @@ li.selected a {
   .logo {
     width: 70px;
     height: 70px;
-    margin-right: 3rem;
+    margin-right: 1.5rem;
   }
 }
 .hero {
