@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="./docs/readme-banner.png" alt="Markdownify"></img>
+  <img src="../docs/readme-banner.png" alt="Markdownify"></img>
   <br>
   Andy Chang
   <br>
@@ -29,7 +29,7 @@
   <a href="#📚-techstack">Techstack</a>
 </p>
 
-![screenshot](./docs/screencapture.gif)
+![screenshot](../docs/screencapture.gif)
 
 ## 💡 Purpose
 
@@ -50,17 +50,14 @@
 
 ## 🗺️ Sitemap
 
-![screenshot](./docs/sitemap.png)
+![screenshot](../docs/sitemap.png)
 
 ## 📸 Screenshots
 
-![screenshot](./docs/webcapture1.jpeg)
-
-![screenshot](./docs/webcapture2.jpeg)
-
-![screenshot](./docs/webcapture3.jpeg)
-
-![screenshot](./docs/webcapture4.jpeg)
+![screenshot](../docs/webcapture1.jpeg)
+![screenshot](../docs/webcapture2.jpeg)
+![screenshot](../docs/webcapture3.jpeg)
+![screenshot](../docs/webcapture4.jpeg)
 
 ## 🎯 Target Audience
 
